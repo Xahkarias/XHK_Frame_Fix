@@ -1,0 +1,17 @@
+
+# XHK NOTE:
+# overwritten to delete them
+
+giga_frameworld_expanded_maintenance_protocol = {
+    potential = {
+        always = no
+    }
+    effect = {  }
+}
+
+giga_frameworld_expanded_maintenance_protocol_remove = {
+    potential = {
+        always = no
+    }
+    effect = {  }
+}

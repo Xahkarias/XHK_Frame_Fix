@@ -1,0 +1,9 @@
+
+# override to be empty
+giga_frameworld_apply_expanded_maintenance_modifier = {
+
+}
+
+giga_frameworld_remove_expanded_maintenance_modifier = {
+
+}

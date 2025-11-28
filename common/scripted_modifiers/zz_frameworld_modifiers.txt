@@ -1,0 +1,18 @@
+###################################################################################################################
+# overwriting generated modifiers (naughty)
+
+# make the frameworld mining districts display decimals
+district_giga_frameworld_mining_max_add = {
+    icon = mod_district_mining_max
+    max_decimals = 3 # the important part
+    good = yes
+    category = planet
+}
+
+# same with planet simultaneous build cap
+planet_building_capacity_add = {
+    icon = mod_planet_building_capacity_add
+    max_decimals = 3 # the important part
+    good = yes
+    category = planet
+}

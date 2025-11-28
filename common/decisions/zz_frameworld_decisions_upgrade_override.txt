@@ -1,0 +1,87 @@
+### ADDING VALIDATION OF DISTRICTS AT THE END
+
+giga_frameworld_maginot = {
+    icon = decision_maginot_planet
+    owned_planets_only = yes
+
+    enactment_time = 9600
+
+    prerequisites = {
+        giga_tech_maginot_world
+    }
+
+    show_tech_unlock_if = {
+        owner = { giga_has_frameworld_origin = yes }
+    }
+
+    resources = {
+        category = megastructures
+        cost = {
+            alloys = 50000
+            minerals = 25000
+            energy = 10000
+        }
+
+        cost = {
+            trigger = {
+                exists = owner
+                owner = {
+                    is_ai = no
+                }
+            }
+            influence = 100
+        }
+    }
+
+    potential = {
+        exists = owner
+        owner = {
+            giga_has_frameworld_origin = yes
+            has_technology = giga_tech_maginot_world
+        }
+        giga_is_frame_world = yes
+        not = {
+            has_planet_flag = frameworld_maginot
+        }
+    }
+
+    allow = {
+        has_building = building_giga_maginot_stronghold
+        custom_tooltip_fail = {
+            not = {
+                has_planet_flag = frameworld_upgrade
+            }
+            text = giga_frameworld_upgrade_fail
+        }
+    }
+
+    effect = {
+        custom_tooltip = giga_frameworld_upgrade_desc
+        custom_tooltip = giga_frameworld_maginot_effect
+
+        add_deposit = d_frameworld_maginot
+        hidden_effect = {
+            set_planet_flag = frameworld_maginot
+        }
+
+        custom_tooltip = frameworld_line
+        custom_tooltip = giga_frameworld_upgrade_upkeep
+
+        hidden_effect = {
+            giga_frameworld_spawn_maginot_defensive_stations = {
+                WHO = owner
+            }
+            init_giga_maginot = yes
+            giga_frameworld_update_maginot_deposits = yes
+        }
+
+        save_event_target_as = giga_planet
+        hidden_effect = { owner = { country_event = { id = giga_frameworld_origin.013 } } }
+
+        validate_planet_buildings_and_districts = yes
+    }
+
+    ai_weight = {
+        weight = 1000
+    }
+}

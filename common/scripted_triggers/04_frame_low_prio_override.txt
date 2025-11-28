@@ -1,0 +1,8 @@
+
+ = {
+    OR = {
+        frameworld_has_active_nanite_upgrade = yes
+        has_active_building = building_nanolab_1
+        has_active_building = building_nanolab_2
+    }
+}
