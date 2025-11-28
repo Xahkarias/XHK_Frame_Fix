@@ -27,6 +27,7 @@ zone_giga_frameworld_trade = {
 
     included_building_sets = {
         trade
+        urban_automation
     }
 
     inline_script = {
@@ -61,6 +62,7 @@ zone_giga_frameworld_refinery = {
         factory
         foundry
         industry
+        urban_automation
     }
     planet_modifier = {
         zone_building_slots_add = 3
@@ -139,6 +141,7 @@ zone_giga_frameworld_anticrime = {
     max_buildings = 3
     included_building_sets = {
         government
+        urban_automation
     }
     excluded_building_sets = { mining generator }
 
@@ -189,6 +192,7 @@ zone_giga_frameworld_amenities = {
     }
     included_building_sets = {
         amenities
+        urban_automation
     }
     include = {
         building_luxury_residence
@@ -241,6 +245,7 @@ zone_giga_frameworld_amenities = {
     icon = GFX_district_specialization_entertainer
 }
 
+# not automated
 zone_giga_frameworld_amenities_dystopian = {
     base_buildtime = @zone_buildtime
     resources = {
@@ -316,6 +321,7 @@ zone_giga_frameworld_supertensiles = {
         factory
         foundry
         industrial
+        urban_automation
     }
     excluded_building_sets = { mining generator }
 
@@ -384,6 +390,7 @@ zone_giga_frameworld_ehof_sentient = {
     }   
     included_building_sets = {
         ehof
+        urban_automation
     }
     planet_modifier = {
         zone_building_slots_add = 1
@@ -416,6 +423,7 @@ zone_giga_frameworld_ehof_negative = {
     }
     included_building_sets = {
         ehof
+        urban_automation
     }
     planet_modifier = {
         zone_building_slots_add = 1
