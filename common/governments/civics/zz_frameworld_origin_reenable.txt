@@ -65,6 +65,6 @@ origin_frameworld = {
     }
 
     random_weight = {
-        base = 1 # half shattered ring but not limited to just one
+        base = 0 # half shattered ring but not limited to just one
     }
 }
