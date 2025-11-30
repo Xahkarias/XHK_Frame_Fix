@@ -1,5 +1,5 @@
 
- = {
+engineer_is_nanotech_researcher_trigger = {
     OR = {
         frameworld_has_active_nanite_upgrade = yes
         has_active_building = building_nanolab_1
