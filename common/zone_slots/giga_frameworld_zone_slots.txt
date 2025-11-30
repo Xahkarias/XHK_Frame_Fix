@@ -85,16 +85,7 @@ slot_giga_frameworld_trade = {
 	}
 
 	unlock = { # planet scope
-		custom_tooltip = {
-			fail_text = gigas_zone_unavailable_tech_interstellar_economics
-			exists = owner
-			owner = {
-				OR = {
-					has_technology = "tech_interstellar_economics"
-					is_gestalt = yes
-				}		
-			}
-		}
+		always = yes
 	}
 }
 

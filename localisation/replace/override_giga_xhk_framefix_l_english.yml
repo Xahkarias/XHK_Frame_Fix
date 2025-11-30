@@ -8,6 +8,8 @@
  frameworld_harvest_0_CONSTRUCTION_INFO_DELAYED:0 "$giga_list_additional_data$ - Expands the §Y$pc_giga_frameworld$§! once, additionally adding §G+1§! §Y$mod_district_giga_frameworld_mining_max_add$ per 4 harvests§!.\n\nCost scales with £mod_planet_clear_blocker_cost_mult£ §Y$MOD_COUNTRY_CLEAR_BLOCKER_COST_MULT$§! modifiers."
  frameworld_asteroid_fake_tooltip:0 "Add §Y$d_frameworld_asteroid$§! to the §Y$pc_giga_frameworld$§!, with the following result:\n    $mod_district_giga_frameworld_mining_max_add$: §G+0.25§!""
 
+ giga_frameworld_advanced_industrial_foundry_effect:0 "Replaces the $pc_giga_frameworld$'s §Y$district_giga_frameworld_foundry_plural$§! with a smaller number of §Y$district_giga_frameworld_foundry_advanced_plural$§!.\n\n§Y$district_giga_frameworld_foundry_advanced_plural$§! provide §Gdouble§! £job_fabricator£§Y[owner.GetAlloyProducer] jobs§!."
+ giga_frameworld_advanced_industrial_factory_effect:0 "Replaces the $pc_giga_frameworld$'s §Y$district_giga_frameworld_factory_plural$§! with a smaller number of §Y$district_giga_frameworld_factory_advanced_plural$§!.\n\n§Y$district_giga_frameworld_factory_advanced_plural$§! provide §Gdouble§! [owner.GetArtisanIcon]§Y[owner.GetArtisan] jobs§!."
 
 
 
