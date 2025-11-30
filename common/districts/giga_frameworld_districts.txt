@@ -1119,7 +1119,7 @@ district_giga_frameworld_trade = {
             exists = owner
             owner = { is_gestalt = no }
         }
-        job_trader_add = 300
+        job_trader_add = 200
     }
     triggered_planet_modifier = {
         potential = {
@@ -1127,7 +1127,7 @@ district_giga_frameworld_trade = {
             exists = owner
             owner = { is_gestalt = yes }
         }
-        job_logistics_drone_add = 300
+        job_logistics_drone_add = 200
     }
 
 	triggered_planet_modifier = {
@@ -1774,19 +1774,10 @@ district_giga_frameworld_administrative = {
             exists = owner
             owner = {
                 is_regular_empire = yes
+                is_spiritualist = no
             }
         }
-        job_bureaucrat_add = 300
-    }
-    triggered_planet_modifier = {
-        potential = {
-            has_deposit = d_frameworld_computing_complex
-            exists = owner
-            owner = {
-                is_regular_empire = no
-            }
-        }
-        job_coordinator_add = 300
+        job_bureaucrat_add = 200
     }
 
 
@@ -1879,19 +1870,10 @@ district_giga_frameworld_temple = {
             exists = owner
             owner = {
                 is_regular_empire = yes
+                is_spiritualist = yes
             }
         }
-        job_bureaucrat_add = 300
-    }
-    triggered_planet_modifier = {
-        potential = {
-            has_deposit = d_frameworld_computing_complex
-            exists = owner
-            owner = {
-                is_regular_empire = no
-            }
-        }
-        job_coordinator_add = 300
+        job_bureaucrat_add = 200
     }
 
 	# might not be great to stack
@@ -1987,20 +1969,10 @@ district_giga_frameworld_synapse = {
             has_deposit = d_frameworld_computing_complex
             exists = owner
             owner = {
-                is_regular_empire = yes
+                is_gestalt = yes
             }
         }
-        job_bureaucrat_add = 300
-    }
-    triggered_planet_modifier = {
-        potential = {
-            has_deposit = d_frameworld_computing_complex
-            exists = owner
-            owner = {
-                is_regular_empire = no
-            }
-        }
-        job_coordinator_add = 300
+        job_coordinator_add = 200
     }
 
 	# triggered_planet_modifier = {
@@ -2102,20 +2074,10 @@ district_giga_frameworld_simulation = {
             has_deposit = d_frameworld_computing_complex
             exists = owner
             owner = {
-                is_regular_empire = yes
+                is_gestalt = yes
             }
         }
-        job_bureaucrat_add = 300
-    }
-    triggered_planet_modifier = {
-        potential = {
-            has_deposit = d_frameworld_computing_complex
-            exists = owner
-            owner = {
-                is_regular_empire = no
-            }
-        }
-        job_coordinator_add = 300
+        job_coordinator_add = 200
     }
 
 	ai_resource_production = {
@@ -2482,9 +2444,9 @@ district_giga_frameworld_science = {
             }
         }
         modifier = {
-            job_physicist_add = 90
-            job_biologist_add = 90
-            job_engineer_add = 90
+            job_physicist_add = 60
+            job_biologist_add = 60
+            job_engineer_add = 60
         }
     }
     triggered_planet_modifier = {
@@ -2495,9 +2457,9 @@ district_giga_frameworld_science = {
                 is_gestalt = yes
             }
         }
-        job_calculator_physicist_add = 90
-        job_calculator_biologist_add = 90
-        job_calculator_engineer_add = 90
+        job_calculator_physicist_add = 60
+        job_calculator_biologist_add = 60
+        job_calculator_engineer_add = 60
     }
 
 	# nanite upgrade

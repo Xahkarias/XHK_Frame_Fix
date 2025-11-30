@@ -49,3 +49,8 @@
 
  giga_frameworld_basic_refinery_zone:0 "Basic Refinery"
  giga_frameworld_basic_refinery_zone_desc:0 "This zone can produce strategic resources in the comfort of a sweltering refinery."
+
+ ######################
+ ### OTHER STUFF
+ ######################
+ frameworld_computing_complex_extra_tt:0 "§GDoubles§! the number of jobs in §GUnity§!, §GTrade§! and §GResearch§! Districts."
