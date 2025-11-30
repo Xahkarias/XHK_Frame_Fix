@@ -2572,15 +2572,157 @@ district_giga_frameworld_refinery = {
 		slot_giga_frameworld_refinery
 	}
 
-	inline_script = {
-		script = districts/frameworld/giga_frameworld_refinery
-		time = @advanced_time
-		cost = @advanced_cost
 
-		fake_motes = @no
-		fake_gases = @no
-		fake_crystals = @no
-	}
+    base_buildtime = @advanced_time
+    icon = district_giga_refinery
+    overlay_icon = GFX_giga_district_strategic_resources
+    gridbox = district_industrial
+    district_background = district_giga_frameworld_refinery
+    is_capped_by_modifier = no
+
+    planet_modifier = {
+        planet_housing_add = 500
+    }
+
+    resources = {
+        category = planet_districts
+        cost = {
+            minerals = @advanced_cost
+        }
+
+        # motes
+        upkeep = {
+            trigger = {
+                exists = owner
+                owner = { has_technology = tech_volatile_motes }
+            }
+            energy = 3
+        }
+        upkeep = {
+            trigger = {
+                exists = owner
+                owner = { has_technology = tech_volatile_motes }
+                frameworld_has_active_nanite_upgrade = yes
+            }
+            energy = 2
+            nanites= 1
+        }
+        produces = {
+            trigger = {
+                exists = owner
+                owner = { has_technology = tech_volatile_motes }
+                frameworld_has_active_nanite_upgrade = yes
+            }
+            volatile_motes = 3
+        }
+
+        # gases
+        upkeep = {
+            trigger = {
+                exists = owner
+                owner = { has_technology = tech_exotic_gases }
+            }
+            energy = 3
+        }
+        upkeep = {
+            trigger = {
+                exists = owner
+                owner = { has_technology = tech_exotic_gases }
+                frameworld_has_active_nanite_upgrade = yes
+            }
+            energy = 2
+            nanites= 1
+        }
+        produces = {
+            trigger = {
+                exists = owner
+                owner = { has_technology = tech_exotic_gases }
+                frameworld_has_active_nanite_upgrade = yes
+            }
+            exotic_gases = 3
+        }
+
+
+        # crystals
+        upkeep = {
+            trigger = {
+                exists = owner
+                owner = { has_technology = tech_rare_crystals }
+            }
+            energy = 3
+        }
+        upkeep = {
+            trigger = {
+                exists = owner
+                owner = { has_technology = tech_rare_crystals }
+                frameworld_has_active_nanite_upgrade = yes
+            }
+            energy = 2
+            nanites= 1
+        }
+        produces = {
+            trigger = {
+                exists = owner
+                owner = { has_technology = tech_rare_crystals }
+                frameworld_has_active_nanite_upgrade = yes
+            }
+            rare_crystals = 3
+        }
+    }
+
+    # CHEMIST
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {has_technology = tech_volatile_motes}
+            is_gestalt = no
+        }
+        job_chemist_add = 30
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {has_technology = tech_volatile_motes}
+            is_gestalt = yes
+        }
+        job_chemist_drone_add = 30
+    }
+
+    # GAS
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {has_technology = tech_exotic_gases}
+            is_gestalt = no
+        }
+        job_gas_refiner_add = 30
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {has_technology = tech_exotic_gases}
+            is_gestalt = yes
+        }
+        job_gas_refiner_drone_add = 30
+    }
+
+    # CRYSTAL
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {has_technology = tech_rare_crystals}
+            is_gestalt = no
+        }
+        job_translucer_add = 30
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {has_technology = tech_rare_crystals}
+            is_gestalt = yes
+        }
+        job_translucer_drone_add = 30
+    }
 
 	show_on_uncolonized = {
 		exists = from
