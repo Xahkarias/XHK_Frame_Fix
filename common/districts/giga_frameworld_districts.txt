@@ -40,7 +40,6 @@ district_giga_frameworld_city = {
 	overlay_icon = GFX_district_government
 	exempt_from_ai_planet_specialization = yes
 	has_primary_zone = yes
-	#custom_gui = planet_district_entry_width_2
 	
 	zone_slots = {
 		slot_city_government
@@ -168,7 +167,6 @@ district_giga_frameworld_city_advanced = {
 	overlay_icon = GFX_district_government
 	exempt_from_ai_planet_specialization = yes
 	has_primary_zone = yes
-	custom_gui = giga_planet_district_entry_frame_main
 	
 	zone_slots = {
 		slot_city_government
@@ -295,7 +293,6 @@ district_giga_frameworld_hive = {
 	overlay_icon = GFX_district_government
 	exempt_from_ai_planet_specialization = yes
 	has_primary_zone = yes
-	custom_gui = giga_planet_district_entry_frame_main
 	
 	zone_slots = {
 		slot_city_government
@@ -385,7 +382,6 @@ district_giga_frameworld_hive_advanced = {
 	overlay_icon = GFX_district_government
 	exempt_from_ai_planet_specialization = yes
 	has_primary_zone = yes
-	custom_gui = giga_planet_district_entry_frame_main
 	
 	zone_slots = {
 		slot_city_government
@@ -476,7 +472,6 @@ district_giga_frameworld_nexus = {
 	overlay_icon = GFX_district_government
 	exempt_from_ai_planet_specialization = yes
 	has_primary_zone = yes
-	custom_gui = giga_planet_district_entry_frame_main
 	
 	zone_slots = {
 		slot_city_government
@@ -589,7 +584,6 @@ district_giga_frameworld_nexus_advanced = {
 	overlay_icon = GFX_district_government
 	exempt_from_ai_planet_specialization = yes
 	has_primary_zone = yes
-	custom_gui = giga_planet_district_entry_frame_main
 	
 	zone_slots = {
 		slot_city_government
