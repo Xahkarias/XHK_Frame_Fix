@@ -200,9 +200,9 @@ slot_giga_frameworld_anticrime = {
 		zone_giga_frameworld_anticrime
 	}
 
-	# included_zone_sets = {
-	# 
-	# }
+	included_zone_sets = {
+        anticrime
+	}
 
 	exclude = {
 	}
@@ -219,6 +219,10 @@ slot_giga_frameworld_refinery = {
 	include = {
 		zone_giga_frameworld_refinery
 	}
+
+    included_zone_sets = {
+        refinery
+    }
 
 	exclude = {
 	}
