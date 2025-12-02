@@ -438,7 +438,16 @@ country_event = {
 					}
 				}
 			}
-			
+
+            ### GALVANIC FIX
+            if = {
+                limit = {
+                    root = { is_galvanic_empire = yes }
+                    NOT = { has_deposit = d_galvanic_living_metal}
+                }
+                add_deposit = d_galvanic_living_metal
+            }
+
 			#####
 			#remove_modifier = frameworld_building_wreck_fix
 			
