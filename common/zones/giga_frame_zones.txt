@@ -68,10 +68,6 @@ zone_giga_frameworld_refinery = {
         zone_building_slots_add = 3
     }
 
-    district_planet_modifier = {
-        planet_housing_add = -200
-    }
-
     triggered_district_planet_modifier = {
         potential = {
             owner = {
@@ -128,6 +124,10 @@ zone_giga_frameworld_refinery = {
     }
     
     icon = GFX_giga_district_specialization_strategic_resources
+
+    inline_script = {
+        script = zones/shared_city_non_urban_zone_modifiers
+    }
 }
 
 zone_giga_frameworld_anticrime = {
@@ -149,10 +149,6 @@ zone_giga_frameworld_anticrime = {
     planet_modifier = {
         zone_building_slots_add = 3
     }
-    
-    district_planet_modifier = {
-        planet_housing_add = -200
-    }
 
     triggered_district_planet_modifier = {
         potential = {
@@ -169,6 +165,10 @@ zone_giga_frameworld_anticrime = {
             }
         }
         job_patrol_drone_add = 300
+    }
+
+    inline_script = {
+        script = zones/shared_city_non_urban_zone_modifiers
     }
 
     ai_priority = 10
@@ -227,10 +227,6 @@ zone_giga_frameworld_amenities = {
     planet_modifier = {
         zone_building_slots_add = 3
     }
-    
-    district_planet_modifier = {
-        planet_housing_add = -200
-    }
 
     triggered_district_planet_modifier = {
         potential = {
@@ -239,6 +235,10 @@ zone_giga_frameworld_amenities = {
             }
         }
         job_entertainer_add = 100
+    }
+
+    inline_script = {
+        script = zones/shared_city_non_urban_zone_modifiers
     }
 
     ai_priority = 10
@@ -290,10 +290,6 @@ zone_giga_frameworld_amenities_dystopian = {
     planet_modifier = {
         zone_building_slots_add = 3
     }
-    
-    district_planet_modifier = {
-        planet_housing_add = -200
-    }
 
     triggered_district_planet_modifier = {
         potential = {
@@ -302,6 +298,10 @@ zone_giga_frameworld_amenities_dystopian = {
             }
         }
         job_politician_add = 50
+    }
+
+    inline_script = {
+        script = zones/shared_city_non_urban_zone_modifiers
     }
 
     ai_priority = 10
@@ -329,8 +329,8 @@ zone_giga_frameworld_supertensiles = {
     planet_modifier = {
         zone_building_slots_add = 2
     }
-    
-    triggered_planet_modifier = {
+
+    triggered_district_planet_modifier = {
 		potential = {
 			exists = owner
 			owner = {
@@ -342,12 +342,8 @@ zone_giga_frameworld_supertensiles = {
 			job_giga_megaengineer_add = 100
 		}
 	}
-	
-    district_planet_modifier = {
-        planet_housing_add = -200
-    }
     
-	triggered_planet_modifier = {
+	triggered_district_planet_modifier = {
 		potential = {
 			exists = owner
 			owner = {
@@ -359,7 +355,7 @@ zone_giga_frameworld_supertensiles = {
 		}
 	}
 
-	triggered_planet_modifier = {
+    triggered_district_planet_modifier = {
 		potential = {
 			exists = owner
 			owner = {
@@ -370,6 +366,11 @@ zone_giga_frameworld_supertensiles = {
 			job_giga_amb_fe_acolyte_foundry_add = 100
 		}
 	}
+
+    inline_script = {
+        script = zones/shared_city_non_urban_zone_modifiers
+    }
+
 
     ai_priority = 10
     icon = GFX_giga_district_specialization_supertensiles
