@@ -360,7 +360,7 @@ d_frameworld_hive = {
                 has_valid_civic = civic_dystopian_society
             }
         }
-        district_giga_frameworld_amenities_dystopian_max = 0.0001
+        district_giga_frameworld_amenities_dystopian_max_add = 0.0001
         multiplier = trigger:pop_amount
     }
 
@@ -369,14 +369,14 @@ d_frameworld_hive = {
         potential = {
             is_giga_maginot_frameworld = yes
         }
-        district_giga_frameworld_maginot_planetary_cannons_max = @giga_frameworld_maginot_district_factor
+        district_giga_frameworld_maginot_planetary_cannons_max_add = @giga_frameworld_maginot_district_factor
         multiplier = trigger:planet_size
     }
     triggered_planet_modifier = {
         potential = {
             is_giga_maginot_frameworld = yes
         }
-        district_giga_frameworld_maginot_shield_generators_max = @giga_frameworld_maginot_district_factor
+        district_giga_frameworld_maginot_shield_generators_max_add = @giga_frameworld_maginot_district_factor
         multiplier = trigger:planet_size
     }
 
@@ -506,7 +506,7 @@ d_frameworld_core = {
                 has_valid_civic = civic_dystopian_society
             }
         }
-        district_giga_frameworld_amenities_dystopian_max = 0.0001
+        district_giga_frameworld_amenities_dystopian_max_add = 0.0001
         multiplier = trigger:pop_amount
     }
 
@@ -515,14 +515,14 @@ d_frameworld_core = {
         potential = {
             is_giga_maginot_frameworld = yes
         }
-        district_giga_frameworld_maginot_planetary_cannons_max = @giga_frameworld_maginot_district_factor
+        district_giga_frameworld_maginot_planetary_cannons_max_add = @giga_frameworld_maginot_district_factor
         multiplier = trigger:planet_size
     }
     triggered_planet_modifier = {
         potential = {
             is_giga_maginot_frameworld = yes
         }
-        district_giga_frameworld_maginot_shield_generators_max = @giga_frameworld_maginot_district_factor
+        district_giga_frameworld_maginot_shield_generators_max_add = @giga_frameworld_maginot_district_factor
         multiplier = trigger:planet_size
     }
 
