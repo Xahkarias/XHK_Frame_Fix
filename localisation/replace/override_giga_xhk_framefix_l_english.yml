@@ -11,7 +11,8 @@
  giga_frameworld_advanced_industrial_foundry_effect:0 "Replaces the $pc_giga_frameworld$'s §Y$district_giga_frameworld_foundry_plural$§! with a smaller number of §Y$district_giga_frameworld_foundry_advanced_plural$§!.\n\n§Y$district_giga_frameworld_foundry_advanced_plural$§! provide §Gdouble§! £job_fabricator£§Y[owner.GetAlloyProducer] jobs§!."
  giga_frameworld_advanced_industrial_factory_effect:0 "Replaces the $pc_giga_frameworld$'s §Y$district_giga_frameworld_factory_plural$§! with a smaller number of §Y$district_giga_frameworld_factory_advanced_plural$§!.\n\n§Y$district_giga_frameworld_factory_advanced_plural$§! provide §Gdouble§! [owner.GetArtisanIcon]§Y[owner.GetArtisan] jobs§!."
 
-
+ giga_frameworld_baol_life_seed_effects:0 "§Y400 $NAME_Nu_Baol$ Pops§! are spawned on [Root.GetName]"
+ giga_frameworld_baol_life_seed_effects_2:0 "§Y600 $NAME_Nu_Baol$ Pops§! are spawned on [Root.GetName]"
 
 
 
