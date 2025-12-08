@@ -2,6 +2,10 @@ spriteTypes = {
     ####################################################################################################################
     # FRAME
     corneredTileSpriteType = {
+        name = "GFX_district_giga_frameworld_mindlink_bg"
+        texturefile = "gfx/interface/planetview/district_backgrounds/district_giga_frameworld_mindlink_bg.dds"
+    }
+    corneredTileSpriteType = {
         name = "GFX_district_giga_frameworld_penrose_bg"
         texturefile = "gfx/interface/planetview/district_backgrounds/district_giga_frameworld_penrose_bg.dds"
     }

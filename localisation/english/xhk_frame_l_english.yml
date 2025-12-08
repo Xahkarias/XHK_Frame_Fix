@@ -42,6 +42,15 @@
  # this needs to be fixed lul
 
  ######################
+ ### DISTRICTS #######
+ ######################
+
+ district_giga_frameworld_mindlink: "$district_mindlink$"
+ district_giga_frameworld_mindlink_plural: "$district_mindlink_plural$"
+ district_giga_frameworld_mindlink_desc: "$district_mindlink_desc$"
+ district_giga_frameworld_mindlink_subtitle: "Transference Confluence"
+
+ ######################
  ### DISTRICT SUBTITLES #######
  ######################
  giga_frameworld_big_refinery_zone:0 "Refinery Complex"

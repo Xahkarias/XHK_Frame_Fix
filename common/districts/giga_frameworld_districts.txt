@@ -58,7 +58,10 @@ district_giga_frameworld_city = {
 	
 	potential = {
 		exists = owner
-		owner = { is_gestalt = no }
+		owner = {
+            is_gestalt = no
+            NOT = { has_menace_perk = menp_behemoth_mind_meld }
+        }
 		uses_district_set = giga_frameworld
 		not = { has_planet_flag = frameworld_advanced_city }
 	}
@@ -71,6 +74,8 @@ district_giga_frameworld_city = {
 		district_giga_frameworld_city_advanced
 		district_giga_frameworld_nexus_advanced
 		district_giga_frameworld_hive_advanced
+
+        district_giga_frameworld_mindlink
 	}
 	
 	resources = {
@@ -87,24 +92,13 @@ district_giga_frameworld_city = {
 		planet_housing_add = 1000
 	}
 
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				has_valid_civic = civic_agrarian_idyll
-			}
-		}
-		modifier = {
-			planet_housing_add = -200
-		}
-	}
+	inline_script = {
+        script = districts/frameworld/giga_frameworld_housing_modifiers
+        BASE = 100
+        HOUSING2 = 200
+    }
 
-	# inline_script = {
-	# 	script = planet/maintenance/giga_clerk_job_swap
-	# 	jobs = 1
-	# 	district = @yes
-	# }
-
+    # tankbound
     triggered_planet_modifier = {
         potential = {
             exists = owner
@@ -117,47 +111,10 @@ district_giga_frameworld_city = {
         }
     }
 
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { has_active_tradition = tr_prosperity_public_works }
-		}
-		modifier = {
-			planet_housing_add = 100
-		}
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				has_technology = tech_housing_1
-			}
-		}
-		modifier = {
-			planet_housing_add = 100
-		}
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				has_technology = tech_housing_2
-				NOT = { has_valid_civic = civic_agrarian_idyll }
-			}
-		}
-		modifier = {
-			planet_housing_add = 200
-		}
-	}
-
 	inline_script = {
 		script = districts/frameworld/name/giga_frameworld_city_name
 	}
 }
-
-###############################################################################################################
 
 district_giga_frameworld_city_advanced = {
 	base_buildtime = @city_time
@@ -183,7 +140,10 @@ district_giga_frameworld_city_advanced = {
 	
 	potential = {
 		exists = owner
-		owner = { is_gestalt = no }
+		owner = {
+            is_gestalt = no
+            NOT = { has_menace_perk = menp_behemoth_mind_meld }
+        }
 		uses_district_set = giga_frameworld
 		has_planet_flag = frameworld_advanced_city
 	}
@@ -196,6 +156,8 @@ district_giga_frameworld_city_advanced = {
 		district_giga_frameworld_city
 		district_giga_frameworld_nexus_advanced
 		district_giga_frameworld_hive_advanced
+
+        district_giga_frameworld_mindlink
 	}
 	
 	resources = {
@@ -212,24 +174,6 @@ district_giga_frameworld_city_advanced = {
 		potential = { always = yes }
 		planet_housing_add = 2000
 	}
-	
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				has_valid_civic = civic_agrarian_idyll
-			}
-		}
-		modifier = {
-			planet_housing_add = -400
-		}
-	}
-
-	# inline_script = {
-	# 	script = planet/maintenance/giga_clerk_job_swap
-	# 	jobs = 2
-	# 	district = @yes
-	# }
 
     triggered_planet_modifier = {
         potential = {
@@ -242,41 +186,12 @@ district_giga_frameworld_city_advanced = {
             job_production_overseer_add = 100
         }
     }
-	
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { has_active_tradition = tr_prosperity_public_works }
-		}
-		modifier = {
-			planet_housing_add = 200
-		}
-	}
-	
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				has_technology = tech_housing_1
-			}
-		}
-		modifier = {
-			planet_housing_add = 200
-		}
-	}
-	
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				has_technology = tech_housing_2
-				NOT = { has_valid_civic = civic_agrarian_idyll }
-			}
-		}
-		modifier = {
-			planet_housing_add = 400
-		}
-	}
+
+    inline_script = {
+        script = districts/frameworld/giga_frameworld_housing_modifiers
+        BASE = 200
+        HOUSING2 = 400
+    }
 
 	inline_script = {
 		script = districts/frameworld/name/giga_frameworld_city_name
@@ -308,12 +223,15 @@ district_giga_frameworld_hive = {
 	
 	potential = {
 		exists = owner
-		owner = { is_hive_empire = yes }
+		owner = {
+            is_hive_empire = yes
+            NOT = { has_menace_perk = menp_behemoth_mind_meld }
+        }
 		uses_district_set = giga_frameworld
 		not = { has_planet_flag = frameworld_advanced_city }
 	}
 	
-	conversion_ratio = 0.5
+	conversion_ratio = 1
 	convert_to = {
 		district_giga_frameworld_nexus
 		district_giga_frameworld_city
@@ -321,6 +239,8 @@ district_giga_frameworld_hive = {
 		district_giga_frameworld_city_advanced
 		district_giga_frameworld_nexus_advanced
 		district_giga_frameworld_hive_advanced
+
+        district_giga_frameworld_mindlink
 	}
 	
 	resources = {
@@ -336,43 +256,17 @@ district_giga_frameworld_hive = {
 	planet_modifier = {
 		planet_housing_add = 1200
 	}
-	
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { has_technology = tech_housing_1 }
-		}
-		modifier = {
-			planet_housing_add = 100
-		}
-	}
-	
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { has_technology = tech_housing_2 }
-		}
-		modifier = {
-			planet_housing_add = 100
-		}
-	}
-	
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { has_active_tradition = tr_prosperity_extended_hives }
-		}
-		modifier = {
-			planet_housing_add = 100
-		}
-	}
+
+    inline_script = {
+        script = districts/frameworld/giga_frameworld_housing_modifiers
+        BASE = 100
+        HOUSING2 = 100
+    }
 
 	inline_script = {
 		script = districts/frameworld/name/giga_frameworld_hive_name
 	}
 }
-
-###############################################################################################################
 
 district_giga_frameworld_hive_advanced = {
 	base_buildtime = @advanced_time
@@ -397,7 +291,10 @@ district_giga_frameworld_hive_advanced = {
 	
 	potential = {
 		exists = owner
-		owner = { is_hive_empire = yes }
+        owner = {
+            is_hive_empire = yes
+            NOT = { has_menace_perk = menp_behemoth_mind_meld }
+        }
 		uses_district_set = giga_frameworld
 		has_planet_flag = frameworld_advanced_city
 	}
@@ -410,6 +307,8 @@ district_giga_frameworld_hive_advanced = {
 		district_giga_frameworld_city_advanced
 		district_giga_frameworld_nexus_advanced
 		district_giga_frameworld_hive
+
+        district_giga_frameworld_mindlink
 	}
 	
 	resources = {
@@ -426,36 +325,12 @@ district_giga_frameworld_hive_advanced = {
 		potential = { always = yes }
 		planet_housing_add = 2400
 	}
-	
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { has_technology = tech_housing_1 }
-		}
-		modifier = {
-			planet_housing_add = 200
-		}
-	}
-	
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { has_technology = tech_housing_2 }
-		}
-		modifier = {
-			planet_housing_add = 200
-		}
-	}
-	
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { has_active_tradition = tr_prosperity_extended_hives }
-		}
-		modifier = {
-			planet_housing_add = 200
-		}
-	}
+
+    inline_script = {
+        script = districts/frameworld/giga_frameworld_housing_modifiers
+        BASE = 200
+        HOUSING2 = 200
+    }
 
 	inline_script = {
 		script = districts/frameworld/name/giga_frameworld_hive_name
@@ -487,7 +362,10 @@ district_giga_frameworld_nexus = {
 	
 	potential = {
 		exists = owner
-		owner = { is_machine_empire = yes }
+        owner = {
+            is_machine_empire = yes
+            NOT = { has_menace_perk = menp_behemoth_mind_meld }
+        }
 		uses_district_set = giga_frameworld
 		not = { has_planet_flag = frameworld_advanced_city }
 	}
@@ -515,7 +393,7 @@ district_giga_frameworld_nexus = {
 		#}
 	}
 	
-	conversion_ratio = 0.5
+	conversion_ratio = 1
 	convert_to = {
 		district_giga_frameworld_city
 		district_giga_frameworld_hive
@@ -523,6 +401,8 @@ district_giga_frameworld_nexus = {
 		district_giga_frameworld_city_advanced
 		district_giga_frameworld_nexus_advanced
 		district_giga_frameworld_hive_advanced
+
+        district_giga_frameworld_mindlink
 	}
 	
 	resources = {
@@ -538,43 +418,17 @@ district_giga_frameworld_nexus = {
 	planet_modifier = {
 		planet_housing_add = 1000
 	}
-	
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { has_technology = tech_housing_1 }
-		}
-		modifier = {
-			planet_housing_add = 100
-		}
-	}
-	
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { has_technology = tech_housing_2 }
-		}
-		modifier = {
-			planet_housing_add = 100
-		}
-	}
-	
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { has_active_tradition = tr_prosperity_optimized_nexus }
-		}
-		modifier = {
-			planet_housing_add = 100
-		}
-	}
+
+    inline_script = {
+        script = districts/frameworld/giga_frameworld_housing_modifiers
+        BASE = 100
+        HOUSING2 = 100
+    }
 
 	inline_script = {
 		script = districts/frameworld/name/giga_frameworld_machine_name
 	}
 }
-
-###############################################################################################################
 
 district_giga_frameworld_nexus_advanced = {
 	base_buildtime = @advanced_time
@@ -599,7 +453,10 @@ district_giga_frameworld_nexus_advanced = {
 	
 	potential = {
 		exists = owner
-		owner = { is_machine_empire = yes }
+        owner = {
+            is_machine_empire = yes
+            NOT = { has_menace_perk = menp_behemoth_mind_meld }
+        }
 		uses_district_set = giga_frameworld
 		has_planet_flag = frameworld_advanced_city
 	}
@@ -635,6 +492,8 @@ district_giga_frameworld_nexus_advanced = {
 		district_giga_frameworld_city_advanced
 		district_giga_frameworld_nexus
 		district_giga_frameworld_hive_advanced
+
+        district_giga_frameworld_mindlink
 	}
 	
 	resources = {
@@ -651,40 +510,175 @@ district_giga_frameworld_nexus_advanced = {
 		potential = { always = yes }
 		planet_housing_add = 2000
 	}
-	
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { has_technology = tech_housing_1 }
-		}
-		modifier = {
-			planet_housing_add = 200
-		}
-	}
-	
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { has_technology = tech_housing_2 }
-		}
-		modifier = {
-			planet_housing_add = 200
-		}
-	}
-	
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { has_active_tradition = tr_prosperity_optimized_nexus }
-		}
-		modifier = {
-			planet_housing_add = 200
-		}
-	}
+
+    inline_script = {
+        script = districts/frameworld/giga_frameworld_housing_modifiers
+        BASE = 200
+        HOUSING2 = 200
+    }
 
 	inline_script = {
 		script = districts/frameworld/name/giga_frameworld_machine_name
 	}
+}
+
+###############################################################################################################
+
+district_giga_frameworld_mindlink = {
+    base_buildtime = @advanced_time
+
+    icon = district_mindlink
+    overlay_icon = GFX_district_feral_insight
+    gridbox = district_city
+    district_background = district_giga_frameworld_mindlink
+
+
+    exempt_from_ai_planet_specialization = yes
+    has_primary_zone = yes
+
+    zone_slots = {
+        slot_city_government
+        slot_frame_government0
+        slot_frame_government1
+    }
+
+    show_on_uncolonized = {
+        always = no
+    }
+
+    potential = {
+        exists = owner
+        owner = {
+            has_menace_perk = menp_behemoth_mind_meld
+        }
+        uses_district_set = giga_frameworld
+    }
+
+    allow = {
+        #hidden_trigger = {
+        exists = owner
+        or = {
+            owner = {
+                is_ai = no
+            }
+
+            # we need more housing
+            free_housing < 10
+
+            # we might still need to unlock buildings
+            num_districts = {
+                type = district_giga_frameworld_nexus_advanced
+                value < 5
+            }
+
+            # if we need more maintenance drones
+            frameworld_needs_more_maintenance_drones = yes
+        }
+        #}
+    }
+
+    conversion_ratio = 1
+    convert_to = {
+        district_giga_frameworld_city
+        district_giga_frameworld_hive
+        district_giga_frameworld_nexus
+
+        district_giga_frameworld_city_advanced
+        district_giga_frameworld_nexus_advanced
+        district_giga_frameworld_hive_advanced
+
+    }
+
+    resources = {
+        category = planet_districts_cities
+        cost = {
+            food = 2000
+        }
+        upkeep = {
+            food = 3
+        }
+        produces = {
+            trigger = {
+                owner = { is_variable_set =  pops_transferred }
+                owner = { is_wilderness_empire = no }
+            }
+            unity = 1.5
+            physics_research = 0.5
+            society_research = 0.5
+            engineering_research = 0.5
+            mult = owner.value:transferred_pops_district_percent
+        }
+    }
+
+    triggered_planet_modifier = {
+        potential = { always = yes }
+        planet_housing_add = 3000
+    }
+
+    triggered_planet_modifier = { #Regular modifiers
+        potential = {
+            exists = owner
+            owner = { is_regular_empire = yes }
+        }
+        modifier = {
+            job_transference_volunteer_add = 1500
+        }
+    }
+    triggered_planet_modifier = { #Regular modifiers
+        potential = {
+            exists = owner
+            owner = { is_regular_empire = yes }
+            has_planet_flag = frameworld_advanced_city
+        }
+        modifier = {
+            job_transference_volunteer_add = 1500
+        }
+    }
+
+    triggered_planet_modifier = { # Gestalt modifiers
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = yes
+            }
+        }
+        modifier = {
+            planet_housing_add = 1000
+            job_transference_drone_add = 1500
+        }
+    }
+    triggered_planet_modifier = { #Regular modifiers
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = yes
+            }
+            has_planet_flag = frameworld_advanced_city
+        }
+        modifier = {
+            job_transference_drone_add = 1500
+        }
+    }
+
+    inline_script = {
+        script = districts/frameworld/giga_frameworld_housing_modifiers
+        BASE = 100
+        HOUSING2 = 100
+    }
+
+    triggered_desc = { #same as transference drone so everyone gets it
+        trigger = {
+            exists = owner
+        }
+        text = job_transference_volunteer_effect_desc
+    }
+
+    triggered_name = {
+        trigger = {
+            always = yes
+        }
+        text = district_giga_frameworld_mindlink_subtitle
+    }
 }
 
 ###############################################################################################################
@@ -780,8 +774,6 @@ district_giga_frameworld_foundry = {
 		script = districts/frameworld/name/giga_frameworld_foundry_name
 	}
 }
-
-###############################################################################################################
 
 district_giga_frameworld_foundry_advanced = {
 	base_buildtime = @advanced_time
@@ -953,8 +945,6 @@ district_giga_frameworld_factory = {
 		script = districts/frameworld/name/giga_frameworld_factory_name
 	}
 }
-
-###############################################################################################################
 
 district_giga_frameworld_factory_advanced = {
 	base_buildtime = @advanced_time
@@ -1264,8 +1254,6 @@ district_giga_frameworld_generator = {
 	}
 }
 
-###############################################################################################################
-
 district_giga_frameworld_penrose = {
 	base_buildtime = @mega_time
 	#icon = district_hab_energy
@@ -1472,8 +1460,6 @@ district_giga_frameworld_mining = {
 		}
 	}
 }
-
-###############################################################################################################
 
 district_giga_frameworld_decompressor = {
 	base_buildtime = @mega_time
@@ -2220,10 +2206,6 @@ district_giga_frameworld_sanctuary = {
 		script = districts/frameworld/name/giga_frameworld_servitor_name
 	}
 }
-
-###############################################################################################################
-
-# servitor unity advanced
 
 district_giga_frameworld_sanctuary_advanced = {
 	base_buildtime = @mega_time
