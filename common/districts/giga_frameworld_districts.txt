@@ -1359,6 +1359,7 @@ district_giga_frameworld_penrose = {
 district_giga_frameworld_mining = {
 	base_buildtime = @base_time
 	icon = district_hab_mining
+    inherits_capped_modifiers_from = district_mining
     is_uncapped = {
         always = no
     }

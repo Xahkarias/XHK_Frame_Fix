@@ -565,7 +565,7 @@ d_frameworld_remnants = {
     potential = { always = no }
 
     planet_modifier = {
-        district_giga_frameworld_mining_max_add = 5
+        district_mining_max_add = 5
     }
 
     resources = {
@@ -763,7 +763,7 @@ d_frameworld_asteroid = {
         potential = { always = yes }
         multiplier = giga_frameworld_asteroids
 
-        district_giga_frameworld_mining_max_add = 0.25
+        district_mining_max_add = 0.25
     }
 }
 d_frameworld_asteroid_tooltip = {
@@ -776,7 +776,7 @@ d_frameworld_asteroid_tooltip = {
     potential = { always = no }
 
     planet_modifier = {
-        district_giga_frameworld_mining_max_add = 0.25
+        district_mining_max_add = 0.25
     }
 }
 
@@ -799,7 +799,7 @@ d_frameworld_planet = {
         potential = { always = yes }
         multiplier = giga_frameworld_planets
 
-        district_giga_frameworld_mining_max_add = 0.25
+        district_mining_max_add = 0.25
     }
 }
 d_frameworld_planet_tooltip = {
@@ -812,7 +812,7 @@ d_frameworld_planet_tooltip = {
     potential = { always = no }
 
     planet_modifier = {
-        district_giga_frameworld_mining_max_add = 0.25
+        district_mining_max_add = 0.25
     }
 }
 
@@ -835,7 +835,7 @@ d_frameworld_devour_expansion = {
         potential = { always = yes }
         multiplier = giga_frameworld_devour_expansions
 
-        district_giga_frameworld_mining_max_add = 0.5
+        district_mining_max_add = 0.5
     }
 }
 d_frameworld_devour_expansion_tooltip = {
@@ -848,7 +848,7 @@ d_frameworld_devour_expansion_tooltip = {
     potential = { always = no }
 
     planet_modifier = {
-        district_giga_frameworld_mining_max_add = 0.5
+        district_mining_max_add = 0.5
     }
 }
 
@@ -873,7 +873,7 @@ d_frameworld_nanite_expansion = {
         }
         multiplier = giga_frameworld_nanite_expansions
 
-        district_giga_frameworld_mining_max_add = 0.2
+        district_mining_max_add = 0.2
         planet_miners_nanites_produces_mult = 0.02
         planet_districts_produces_mult = 0.02
     }
@@ -894,7 +894,7 @@ d_frameworld_nanite_expansion_tooltip = {
                 has_tradition = tr_nanotech_adopt
             }
         }
-        district_giga_frameworld_mining_max_add = 0.2
+        district_mining_max_add = 0.2
         planet_miners_nanites_produces_mult = 0.02
         planet_districts_produces_mult = 0.02
     }
