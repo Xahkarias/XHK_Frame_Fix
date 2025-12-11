@@ -46,6 +46,10 @@ slot_giga_frameworld_foundry = {
 	}
 
 	exclude = {
+        xhk_acot_zone_DM_foundry
+        xhk_acot_zone_DE_foundry
+        xhk_acot_zone_PE_foundry
+        xhk_acot_zone_SE_foundry
 	}
 
 	unlock = { # planet scope
@@ -63,8 +67,12 @@ slot_giga_frameworld_factory = {
 		factory
 	}
 
-	exclude = {
-	}
+    exclude = {
+        xhk_acot_zone_DM_factory
+        xhk_acot_zone_DE_factory
+        xhk_acot_zone_PE_factory
+        xhk_acot_zone_SE_factory
+    }
 
 	unlock = { # planet scope
 		always = yes
@@ -81,8 +89,12 @@ slot_giga_frameworld_trade = {
 		trade
 	}
 
-	exclude = {
-	}
+    exclude = {
+        xhk_acot_zone_DM_trade
+        xhk_acot_zone_DE_trade
+        xhk_acot_zone_PE_trade
+        xhk_acot_zone_SE_trade
+    }
 
 	unlock = { # planet scope
 		always = yes
@@ -99,8 +111,12 @@ slot_giga_frameworld_unity = {
 		unity
 	}
 
-	exclude = {
-	}
+    exclude = {
+        xhk_acot_zone_DM_unity
+        xhk_acot_zone_DE_unity
+        xhk_acot_zone_PE_unity
+        xhk_acot_zone_SE_unity
+    }
 
 	unlock = { # planet scope
 		always = yes
@@ -135,8 +151,12 @@ slot_giga_frameworld_unity_priest = {
 		unity
 	}
 
-	exclude = {
-	}
+    exclude = {
+        xhk_acot_zone_DM_priest
+        xhk_acot_zone_DE_priest
+        xhk_acot_zone_PE_priest
+        xhk_acot_zone_SE_priest
+    }
 
 	unlock = { # planet scope
 		always = yes
@@ -157,8 +177,12 @@ slot_giga_frameworld_unity_servitor = {
 		unity
 	}
 
-	exclude = {
-	}
+    exclude = {
+        xhk_acot_zone_DM_servitor
+        xhk_acot_zone_DE_servitor
+        xhk_acot_zone_PE_servitor
+        xhk_acot_zone_SE_servitor
+    }
 
 	unlock = { # planet scope
 		always = yes
@@ -183,8 +207,12 @@ slot_giga_frameworld_research = {
 		research
 	}
 
-	exclude = {
-	}
+    exclude = {
+        xhk_acot_zone_DM_research
+        xhk_acot_zone_DE_research
+        xhk_acot_zone_PE_research
+        xhk_acot_zone_SE_research
+    }
 
 	unlock = { # planet scope
 		always = yes
@@ -224,8 +252,12 @@ slot_giga_frameworld_refinery = {
         refinery
     }
 
-	exclude = {
-	}
+    exclude = {
+        xhk_acot_zone_DM_refinery
+        xhk_acot_zone_DE_refinery
+        xhk_acot_zone_PE_refinery
+        xhk_acot_zone_SE_refinery
+    }
 
 	unlock = { # planet scope
 		always = yes
@@ -300,6 +332,13 @@ slot_giga_frameworld_fortress = {
 		fortress
 	}
 
+    exclude = {
+        xhk_acot_zone_DM_fortress
+        xhk_acot_zone_DE_fortress
+        xhk_acot_zone_PE_fortress
+        xhk_acot_zone_SE_fortress
+    }
+
 	unlock = { # planet scope
 		always = yes
 	}
@@ -315,10 +354,106 @@ slot_giga_frameworld_fortress_bunker = {
 		maginot_bunker_complexes
 	}
 
+    exclude = {
+        xhk_acot_zone_DM_fortress
+        xhk_acot_zone_DE_fortress
+        xhk_acot_zone_PE_fortress
+        xhk_acot_zone_SE_fortress
+    }
+
 	unlock = { # planet scope
 		always = yes
 	}
 }
 
+# makes sure that we have no vanilla aot zones
+slot_giga_frameworld_minerals = {
+    included_zone_sets = {
+        minerals
+    }
 
+    exclude = {
+        xhk_acot_zone_DM_mineral
+        xhk_acot_zone_DE_mineral
+        xhk_acot_zone_PE_mineral
+        xhk_acot_zone_SE_mineral
+    }
+
+    unlock = { # planet scope
+        custom_tooltip = {
+            fail_text = zone_unavailable_tech_mineral_purification_1
+            exists = owner
+            owner = {
+                has_tech_or_functional_civic = {
+                    TECH = tech_mineral_purification_1
+                }
+            }
+        }
+    }
+}
+
+slot_giga_frameworld_energy = {
+    included_zone_sets = {
+        energy
+    }
+
+    exclude = {
+        xhk_acot_zone_DM_energy
+        xhk_acot_zone_DE_energy
+        xhk_acot_zone_PE_energy
+        xhk_acot_zone_SE_energy
+
+    }
+    unlock = { # planet scope
+        custom_tooltip = {
+            fail_text = zone_unavailable_tech_power_hub_1
+            exists = owner
+            owner = {
+                has_tech_or_functional_civic = {
+                    TECH = tech_power_hub_1
+                }
+            }
+        }
+    }
+}
+
+slot_giga_frameworld_food = {
+    included_zone_sets = {
+        food
+    }
+
+    exclude = {
+        xhk_acot_zone_DM_food
+        xhk_acot_zone_DE_food
+        xhk_acot_zone_PE_food
+        xhk_acot_zone_SE_food
+    }
+
+    unlock = { # planet scope
+        custom_tooltip = {
+            fail_text = zone_unavailable_tech_food_processing_1
+            OR = {
+                AND = {
+                    exists = owner
+                    owner = { is_anglers_empire = yes }
+                    is_wet = yes
+                }
+                AND = {
+                    exists = owner
+                    owner = {
+                        has_valid_civic = civic_agrarian_idyll
+                    }
+                }
+                AND = {
+                    exists = owner
+                    owner = {
+                        has_tech_or_functional_civic = {
+                            TECH = tech_food_processing_1
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 

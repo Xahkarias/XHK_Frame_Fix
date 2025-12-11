@@ -1158,7 +1158,7 @@ district_giga_frameworld_generator = {
 	#gridbox = district_generator
 	
 	zone_slots = {
-		slot_energy
+        slot_giga_frameworld_energy
 	}
 
 	show_on_uncolonized = {
@@ -1263,7 +1263,7 @@ district_giga_frameworld_penrose = {
 	#district_background = district_giga_frame_penrose_bg
 	
 	zone_slots = {
-		slot_energy
+        slot_giga_frameworld_energy
 	}
 
 	show_on_uncolonized = {
@@ -1366,7 +1366,7 @@ district_giga_frameworld_mining = {
 	overlay_icon = GFX_district_minerals
 
 	zone_slots = {
-		slot_minerals
+        slot_giga_frameworld_minerals
 	}
 
 	show_on_uncolonized = {
@@ -1471,7 +1471,7 @@ district_giga_frameworld_decompressor = {
 	#district_background = district_giga_frame_decompressor_bg
 	
 	zone_slots = {
-		slot_minerals
+        slot_giga_frameworld_minerals
 	}
 
 	show_on_uncolonized = {
@@ -1571,7 +1571,7 @@ district_giga_frameworld_farming = {
 	overlay_icon = GFX_district_food
 	
 	zone_slots = {
-		slot_food
+        slot_giga_frameworld_food
 	}
 
 	show_on_uncolonized = {
