@@ -185,7 +185,7 @@ country_event = {
 			}
 
 			# job upkeep adjustment
-			add_deposit = d_giga_job_upkeep
+			#add_deposit = d_giga_job_upkeep
 			
 			##### replace districts
 			# add_modifier = {
