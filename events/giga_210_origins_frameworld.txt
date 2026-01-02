@@ -827,7 +827,7 @@ country_event = {
 			# if there are no pops left, clear out the planet and place an outpost
 			if = {
 				limit = {
-					num_pops = 0
+					pop_amount = 0
 				}
 				
 				#remove_all_buildings = yes
