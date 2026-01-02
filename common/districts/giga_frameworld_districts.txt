@@ -2511,10 +2511,9 @@ district_giga_frameworld_refinery = {
 		slot_giga_frameworld_refinery
 	}
 
-
     base_buildtime = @advanced_time
-    icon = district_virtual_strat_res
-    #overlay_icon = GFX_giga_district_strategic_resources
+    icon = district_giga_refinery
+    overlay_icon = GFX_giga_district_strategic_resources
     gridbox = district_industrial
     district_background = district_giga_frameworld_refinery
     is_capped_by_modifier = no
@@ -3220,7 +3219,7 @@ district_giga_frameworld_sentient_metal = {
 	base_buildtime = @advanced_time
 	icon = district_giga_sentient_metal
 	is_capped_by_modifier = no
-	#overlay_icon = GFX_giga_district_sentient_metal
+	overlay_icon = GFX_giga_district_sentient_metal
 	district_background = district_giga_frameworld_sentient_metal
 	gridbox = district_giga_birch_ktisma_sentient_metal
 	
@@ -3304,7 +3303,7 @@ district_giga_frameworld_negative_mass = {
 	base_buildtime = @advanced_time
 	icon = district_giga_negative_mass
 	is_capped_by_modifier = no
-	#overlay_icon = GFX_giga_district_negative_mass
+	overlay_icon = GFX_giga_district_negative_mass
 	district_background = district_giga_frameworld_negative_mass
 	gridbox = district_giga_birch_orykta_negative_mass
 	
@@ -3393,7 +3392,7 @@ district_giga_frameworld_negative_mass = {
 district_giga_frameworld_supertensiles = {
 	base_buildtime = @b2_time
 	icon = district_giga_supertensiles
-	#overlay_icon = GFX_giga_district_supertensiles
+	overlay_icon = GFX_giga_district_supertensiles
 	district_background = district_giga_frameworld_supertensiles
 	is_capped_by_modifier = no
 	
