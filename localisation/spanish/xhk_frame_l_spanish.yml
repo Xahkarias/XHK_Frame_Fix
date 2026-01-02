@@ -1,0 +1,65 @@
+﻿l_spanish:
+  
+  trait_auto_pc_giga_frameworld_preference:99 "$pc_giga_frameworld$ Mutations"
+  trait_auto_pc_giga_frameworld_preference_tt:99 "$pc_giga_frameworld$ Habitability: §G100%§!\n$t$- $IDEAL_PREFERENCE_TT$"
+  trait_auto_pc_giga_frameworld_preference_desc:99 "$trait_auto_hab_preference_desc$"
+  
+  mod_district_giga_frameworld_mining_max_add:99 "Max $district_hab_mining_plural$"
+  mod_district_giga_frameworld_amenities_dystopian_max_add:99 "Max $district_giga_frameworld_amenities_dystopian_plural$"
+  
+  district_giga_frameworld_fortress_bunker:99 "Maginot Fortress District"
+  district_giga_frameworld_fortress_bunker_plural:99 "Maginot Fortress Districts"
+  district_giga_frameworld_fortress_bunker_desc:99 "$district_giga_frameworld_fortress_desc$"
+  
+  ######################
+  ### ZONES #######
+  ######################
+  zone_giga_frameworld_trade:99 "$zone_trade$"
+  zone_giga_frameworld_trade_desc:99 "$zone_trade_desc$"
+  
+  zone_giga_frameworld_anticrime:99 "Extra Security Forces"
+  zone_giga_frameworld_anticrime_desc:99 "Extra resources allocated to Frame security."
+  
+  zone_giga_frameworld_refinery:99 "Refinery Expansion"
+  zone_giga_frameworld_refinery_desc:99 "Allocating more space for refining rare resources."
+  
+  gigas_zone_unavailable_tech_interstellar_economics:99 "$society_research_icon_with_space$$tech_interstellar_economics$"
+  
+  zone_giga_frameworld_amenities:99 "$zone_resort_entertainment$"
+  zone_giga_frameworld_amenities_desc:99 "$zone_resort_entertainment_desc$"
+  
+  zone_giga_frameworld_amenities_dystopian:99 "$district_giga_frameworld_amenities_dystopian$ Expansion"
+  zone_giga_frameworld_amenities_dystopian_desc:99 "$district_giga_frameworld_amenities_dystopian_desc$"
+  
+  zone_giga_frameworld_ehof_sentient:99 "$building_ehof_sm_forge_2$"
+  zone_giga_frameworld_ehof_sentient_desc:99 "$building_ehof_sm_forge_2_desc$"
+  
+  zone_giga_frameworld_ehof_negative:99 "$building_negative_mass_factory_2$"
+  zone_giga_frameworld_ehof_negative_desc:99 "$building_negative_mass_factory_2_desc$"
+  
+  zone_giga_frameworld_supertensiles:99 "Megaconstruction Hub"
+  zone_giga_frameworld_supertensiles_desc:99 "$building_giga_megaworkshop_hub_desc$"
+  # this needs to be fixed lul
+  
+  ######################
+  ### DISTRICTS #######
+  ######################
+  
+  district_giga_frameworld_mindlink:99 "$district_mindlink$"
+  district_giga_frameworld_mindlink_plural:99 "$district_mindlink_plural$"
+  district_giga_frameworld_mindlink_desc:99 "$district_mindlink_desc$"
+  district_giga_frameworld_mindlink_subtitle:99 "Transference Confluence"
+  
+  ######################
+  ### DISTRICT SUBTITLES #######
+  ######################
+  giga_frameworld_big_refinery_zone:99 "Refinery Complex"
+  giga_frameworld_big_refinery_zone_desc:99 "By integrating the seperate refineries together, they can share certain parts, improving space efficiency."
+  
+  giga_frameworld_basic_refinery_zone:99 "Basic Refinery"
+  giga_frameworld_basic_refinery_zone_desc:99 "This zone can produce strategic resources in the comfort of a sweltering refinery."
+  
+  ######################
+  ### OTHER STUFF
+  ######################
+  frameworld_computing_complex_extra_tt:99 "§GDoubles§! the number of jobs in §GUnity§!, §GTrade§! and §GResearch§! Districts."
