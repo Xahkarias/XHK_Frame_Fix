@@ -1,1 +1,3 @@
 Added Army Build speed per expansion (since multibuild doesnt work on armies)
+Readded HDS (Its disabled tho, just like the birch)
+Added paradise dome tech requirement to upgrading sanctuary districts
