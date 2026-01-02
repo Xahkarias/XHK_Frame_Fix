@@ -3,3 +3,4 @@ Readded HDS (Its disabled tho, just like the birch)
 Added paradise dome tech requirement to upgrading sanctuary districts
 Using new birch art assets
 Fix outposts not appearing on planet conquest
+Fix virtual frame not properly killing pops on outpost planets
