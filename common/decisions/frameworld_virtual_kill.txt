@@ -1,0 +1,32 @@
+giga_frameworld_server_shut_down = {
+    owned_planets_only = yes
+    sound = event_administrative_work
+    icon = decision_glitchy_matrix
+
+    resources = {
+        category = decisions
+        cost = {
+            unity = 200
+        }
+    }
+
+    potential = {
+        exists = owner
+        owner = {
+            has_origin = origin_frameworld
+            has_tradition = tr_virtuality_finish
+        }
+    }
+
+    allow = {
+        is_capital = no
+    }
+
+    effect = {
+        destroy_colony = yes
+    }
+
+    ai_weight = {
+        weight = 0
+    }
+}

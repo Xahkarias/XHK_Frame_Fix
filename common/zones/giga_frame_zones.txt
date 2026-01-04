@@ -396,7 +396,7 @@ zone_giga_frameworld_ehof_sentient = {
         zone_building_slots_add = 1
     }
     ai_priority = 10
-    icon = GFX_giga_district_sentient_metal
+    icon = GFX_giga_district_specialization_sentient_metal
 }
 
 zone_giga_frameworld_ehof_negative = {
@@ -429,5 +429,5 @@ zone_giga_frameworld_ehof_negative = {
         zone_building_slots_add = 1
     }
     ai_priority = 10
-    icon = GFX_giga_district_negative_mass
+    icon = GFX_giga_district_specialization_negative_mass
 }
