@@ -63,3 +63,6 @@
  ### OTHER STUFF
  ######################
  frameworld_computing_complex_extra_tt:0 "§GDoubles§! the number of jobs in §GUnity§!, §GTrade§! and §GResearch§! Districts."
+
+ giga_frameworld_server_shut_down: "§GFRAMEWORLD§! VIRTUAL SERVER SHUTDOWN"
+ giga_frameworld_server_shut_down_desc: "§GUSE THIS INSTEAD OF THE NORMAL VIRTUAL SHUT DOWN DECISION§!"

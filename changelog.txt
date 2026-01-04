@@ -1,0 +1,7 @@
+Added Army Build speed per expansion (since multibuild doesnt work on armies)
+Readded HDS (Its disabled tho, just like the birch)
+Added paradise dome tech requirement to upgrading sanctuary districts
+Using new birch art assets
+Fix outposts not appearing on planet conquest
+Fix virtual frame not properly killing pops on outpost planets
+Added default localization for all non-english languages

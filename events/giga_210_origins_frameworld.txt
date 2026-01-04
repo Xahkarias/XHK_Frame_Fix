@@ -185,7 +185,7 @@ country_event = {
 			}
 
 			# job upkeep adjustment
-			#add_deposit = d_giga_job_upkeep
+			add_deposit = d_giga_job_upkeep
 			
 			##### replace districts
 			# add_modifier = {
@@ -803,31 +803,62 @@ country_event = {
 				}
 			}
 
-			# shut down some virtual pops anyway
-			if = {
+			# if only virtual pops left
+			# taken from my virtual fix mod
+			else_if = {
 				limit = {
-					any_owned_pop_group = {
-						is_robotic_species = yes
-						has_virtual_species_trait = yes
-					}
-				}
-				while = {
-					# 5% or 400, whichever is more
-					count = value:giga_frameworld_resettlement_count
-					random_owned_pop_group = {
-						limit = {
+					OR = {
+						any_owned_pop_group = {
+							is_unemployed = yes
 							is_robotic_species = yes
 							has_virtual_species_trait = yes
 						}
-						kill_pop = yes
+						any_owned_pop_group = {
+							is_robotic_species = yes
+							has_virtual_species_trait = yes
+							is_pop_category = civilian
+						}
+						## XHK: I KILL THEM
+						any_owned_pop_group = {
+							is_robotic_species = yes
+							has_virtual_species_trait = yes
+							is_pop_category = no_category
+						}
 					}
+				}
+				every_owned_pop_group = {
+					limit = {
+						OR = {
+							AND = {
+								is_unemployed = yes
+								is_robotic_species = yes
+								has_virtual_species_trait = yes
+							}
+							AND = {
+								is_robotic_species = yes
+								has_virtual_species_trait = yes
+								is_pop_category = civilian
+							}
+							## XHK: I KILL THEM
+							AND = {
+								is_robotic_species = yes
+								has_virtual_species_trait = yes
+								is_pop_category = no_category
+							}
+						}
+					}
+					kill_pop_group = {
+						pop_group = this
+						percentage = 1
+					}
+				
 				}
 			}
 
 			# if there are no pops left, clear out the planet and place an outpost
 			if = {
 				limit = {
-					num_pops = 0
+					pop_amount = 0
 				}
 				
 				#remove_all_buildings = yes

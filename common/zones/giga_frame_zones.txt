@@ -50,6 +50,7 @@ zone_giga_frameworld_trade = {
 }
 
 zone_giga_frameworld_refinery = {
+    icon = GFX_giga_district_specialization_strategic_resources
     base_buildtime = @zone_buildtime
     resources = {
         category = planet_zones
@@ -122,8 +123,6 @@ zone_giga_frameworld_refinery = {
         }
         job_translucer_drone_add = 30 
     }
-    
-    icon = GFX_giga_district_specialization_strategic_resources
 
     inline_script = {
         script = zones/shared_city_non_urban_zone_modifiers
@@ -397,7 +396,7 @@ zone_giga_frameworld_ehof_sentient = {
         zone_building_slots_add = 1
     }
     ai_priority = 10
-    icon = GFX_giga_district_sentient_metal
+    icon = GFX_giga_district_specialization_sentient_metal
 }
 
 zone_giga_frameworld_ehof_negative = {
@@ -430,5 +429,5 @@ zone_giga_frameworld_ehof_negative = {
         zone_building_slots_add = 1
     }
     ai_priority = 10
-    icon = GFX_giga_district_negative_mass
+    icon = GFX_giga_district_specialization_negative_mass
 }

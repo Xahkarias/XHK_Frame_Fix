@@ -1,3 +1,89 @@
+### ADDING REQUIREMENT OF PARADISE DOME
+
+
+giga_frameworld_advanced_sanctuary = {
+	icon = decision_leisure_arcology
+	owned_planets_only = yes
+	
+	enactment_time = 4800
+	
+	resources = {
+		category = decisions
+		cost = {
+			minerals = 10000
+		}
+		
+		cost = {
+			trigger = {
+				exists = owner
+				owner = {
+					is_ai = no
+				}
+			}
+			influence = 150
+		}
+	}
+	
+	potential = {
+		exists = owner
+		owner = {
+			giga_has_frameworld_origin = yes
+			is_machine_empire = yes
+			has_valid_civic = civic_machine_servitor
+			has_ascension_perk = ap_arcology_project
+		}
+		giga_is_frame_world = yes
+		not = {
+			has_planet_flag = frameworld_advanced_sanctuary
+		}
+	}
+	
+	allow = {
+		custom_tooltip_fail = {
+			not = {
+				has_planet_flag = frameworld_upgrade
+			}
+			text = giga_frameworld_upgrade_fail
+		}
+        owner = {
+            has_technology = tech_paradise_dome
+        }
+	}
+	
+	effect = {
+		custom_tooltip = giga_frameworld_upgrade_desc
+		custom_tooltip = giga_frameworld_advanced_sanctuary_effect
+
+		hidden_effect = {
+			add_deposit = d_frameworld_advanced_sanctuary
+			set_planet_flag = frameworld_advanced_sanctuary
+			validate_planet_buildings_and_districts = yes
+		}
+
+		save_event_target_as = giga_planet
+		hidden_effect = { owner = { country_event = { id = giga_frameworld_origin.009 } } }
+	}
+	
+	ai_weight = {
+		weight = 100
+		
+		modifier = {
+			factor = 10
+			free_district_slots < 1
+		}
+		
+		modifier = {
+			factor = 50
+			num_districts = {
+				type = district_giga_frameworld_sanctuary
+				value >= 10
+			}
+		}
+	}
+}
+
+
+
 ### ADDING VALIDATION OF DISTRICTS AT THE END
 
 giga_frameworld_maginot = {
@@ -85,3 +171,4 @@ giga_frameworld_maginot = {
         weight = 1000
     }
 }
+
