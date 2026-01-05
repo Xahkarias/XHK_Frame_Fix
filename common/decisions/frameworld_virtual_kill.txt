@@ -12,6 +12,7 @@ giga_frameworld_server_shut_down = {
 
     potential = {
         exists = owner
+        is_capital = no
         owner = {
             has_origin = origin_frameworld
             has_tradition = tr_virtuality_finish
