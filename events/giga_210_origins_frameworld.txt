@@ -807,6 +807,7 @@ country_event = {
 			# taken from my virtual fix mod
 			else_if = {
 				limit = {
+                    NOT = { is_planet_class = pc_giga_frameworld }
 					OR = {
 						any_owned_pop_group = {
 							is_unemployed = yes
@@ -868,6 +869,7 @@ country_event = {
 				if = {
 					limit = {
 						can_have_frameworld_outpost = yes
+                        not = { is_planet_class = pc_birch}
 					}
 					set_planet_flag = frameworld_built_outpost
 					#giga_frameworld_create_outpost = { WHO = root RESETTLED = yes}
@@ -886,6 +888,8 @@ country_event = {
 						scopes = { from = prev }
 					}
 				}
+
+                destroy_colony = yes
 			}
 		}
 		set_update_modifiers_batch = end
