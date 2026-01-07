@@ -6,7 +6,7 @@ slot_frame_government0 = {
 	}
 
 	included_zone_sets = {
-		frame_urban
+		frame_urban1
 	}
 
 	exclude = {
@@ -24,7 +24,7 @@ slot_frame_government1 = {
 	}
 
 	included_zone_sets = {
-        frame_urban
+        frame_urban2
 	}
 
 	exclude = {
