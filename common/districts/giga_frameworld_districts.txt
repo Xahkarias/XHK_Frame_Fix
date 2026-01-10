@@ -1259,7 +1259,7 @@ district_giga_frameworld_penrose = {
 	#icon = district_hab_energy
 	is_capped_by_modifier = no
 	overlay_icon = GFX_district_energy
-	#gridbox = district_generator
+	gridbox = district_generator
 	#district_background = district_giga_frame_penrose_bg
 	
 	zone_slots = {
