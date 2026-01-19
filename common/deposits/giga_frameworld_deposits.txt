@@ -876,6 +876,7 @@ d_frameworld_nanite_expansion = {
 
         district_mining_max_add = 0.2
         planet_miners_nanites_produces_mult = 0.02
+        planet_farmers_nanites_produces_mult = 0.02
         planet_districts_produces_mult = 0.02
     }
 }
@@ -897,6 +898,7 @@ d_frameworld_nanite_expansion_tooltip = {
         }
         district_mining_max_add = 0.2
         planet_miners_nanites_produces_mult = 0.02
+        planet_farmers_nanites_produces_mult = 0.02
         planet_districts_produces_mult = 0.02
     }
 }
