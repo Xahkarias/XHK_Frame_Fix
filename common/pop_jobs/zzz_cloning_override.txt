@@ -1,0 +1,69 @@
+giga_cloning = {
+    category = specialist
+    swappable_data = {
+        default = {
+            condition_string = SPECIALIST_JOB_TRIGGER
+            building_icon = building_clone_vats
+        }
+    }
+
+    possible_pre_triggers = {
+        has_owner = yes
+        is_being_purged = no
+        is_being_assimilated = no
+        is_sapient = yes
+    }
+
+    possible_precalc = can_fill_specialist_job
+
+    triggered_planet_modifier = {
+        potential = {
+            # added stop if population controls
+            NOT = { has_modifier = planet_population_control }
+        }
+        bonus_pop_growth = 2
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = planet
+            planet = {
+                exists = owner
+                owner = {
+                    OR = {
+                        # added check for biogenesis
+                        has_tradition = tr_genetics_efficient_cloning
+                        has_tradition = tr_cloning_adopt
+                    }
+                }
+                # added stop if population controls
+                NOT = { has_modifier = planet_population_control }
+            }
+        }
+        bonus_pop_growth = 1
+    }
+
+    resources = {
+        category = planet_jobs
+        upkeep = {
+            consumer_goods = 1
+        }
+        upkeep = {
+            trigger = {
+                exists = owner
+                owner = { is_lithoid_empire = no }
+            }
+            food = 5
+        }
+        upkeep = {
+            trigger = {
+                exists = owner
+                owner = { is_lithoid_empire = yes }
+            }
+            minerals = 5
+        }
+    }
+
+    weight = {
+        weight = value:giga_specialist_no_resource_weight|JOB|giga_cloning|INDENTURED|0.5|
+    }
+}
