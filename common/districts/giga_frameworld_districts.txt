@@ -25,6 +25,13 @@
 
 @half_district_jobs = 100
 
+@frame_city_housing = 1000
+@frame_2x_city_housing = 2000
+@frame_hive_housing = 1200
+@frame_2x_hive_housing = 2400
+@frame_housing = 400
+@frame_housing_rural = 200
+@frame_housing_2x_rural = 400
 
 ###############################################################################################################
 ###############################################################################################################
@@ -89,7 +96,7 @@ district_giga_frameworld_city = {
 	}
 	
 	planet_modifier = {
-		planet_housing_add = 1000
+		planet_housing_add = @frame_city_housing
 	}
 
 	inline_script = {
@@ -172,7 +179,7 @@ district_giga_frameworld_city_advanced = {
 	
 	triggered_planet_modifier = {
 		potential = { always = yes }
-		planet_housing_add = 2000
+		planet_housing_add = @frame_2x_city_housing
 	}
 
     triggered_planet_modifier = {
@@ -254,7 +261,7 @@ district_giga_frameworld_hive = {
 	}
 	
 	planet_modifier = {
-		planet_housing_add = 1200
+		planet_housing_add = @frame_hive_housing
 	}
 
     inline_script = {
@@ -323,7 +330,7 @@ district_giga_frameworld_hive_advanced = {
 
 	triggered_planet_modifier = {
 		potential = { always = yes }
-		planet_housing_add = 2400
+		planet_housing_add = @frame_2x_hive_housing
 	}
 
     inline_script = {
@@ -416,7 +423,7 @@ district_giga_frameworld_nexus = {
 	}
 	
 	planet_modifier = {
-		planet_housing_add = 1000
+		planet_housing_add = @frame_city_housing
 	}
 
     inline_script = {
@@ -508,7 +515,7 @@ district_giga_frameworld_nexus_advanced = {
 
 	triggered_planet_modifier = {
 		potential = { always = yes }
-		planet_housing_add = 2000
+		planet_housing_add = @frame_2x_city_housing
 	}
 
     inline_script = {
@@ -748,7 +755,7 @@ district_giga_frameworld_foundry = {
 	}
 	
 	planet_modifier = {
-		planet_housing_add = 500
+		planet_housing_add = @frame_housing
 	}
 	
 	inline_script = {
@@ -828,7 +835,7 @@ district_giga_frameworld_foundry_advanced = {
 	}
 	
 	planet_modifier = {
-		planet_housing_add = 600
+		planet_housing_add = @frame_housing
 	}
 	
 	inline_script = {
@@ -919,7 +926,7 @@ district_giga_frameworld_factory = {
 	}
 
 	planet_modifier = {
-		planet_housing_add = 500
+		planet_housing_add = @frame_housing
 	}
 
 	inline_script = {
@@ -998,7 +1005,7 @@ district_giga_frameworld_factory_advanced = {
 	}
 
 	planet_modifier = {
-		planet_housing_add = 300
+		planet_housing_add = @frame_housing
 	}
 
 	inline_script = {
@@ -1088,7 +1095,7 @@ district_giga_frameworld_trade = {
 	}
 
 	planet_modifier = {
-		planet_housing_add = 500
+		planet_housing_add = @frame_housing
 	}
 
 	inline_script = {
@@ -1195,7 +1202,7 @@ district_giga_frameworld_generator = {
 	}
 	
 	planet_modifier = {
-		planet_housing_add = 200
+		planet_housing_add = @frame_housing_rural
 	}
 	
 	triggered_planet_modifier = {
@@ -1293,7 +1300,7 @@ district_giga_frameworld_penrose = {
 	}
 	
 	planet_modifier = {
-		planet_housing_add = 400
+		planet_housing_add = @frame_housing_2x_rural
 	}
 	
 	triggered_planet_modifier = {
@@ -1401,7 +1408,7 @@ district_giga_frameworld_mining = {
 	}
 	
 	planet_modifier = {
-		planet_housing_add = 200
+		planet_housing_add = @frame_housing_rural
 	}
 	
 	triggered_planet_modifier = {
@@ -1499,7 +1506,7 @@ district_giga_frameworld_decompressor = {
 	}
 	
 	planet_modifier = {
-		planet_housing_add = 400
+		planet_housing_add = @frame_housing_2x_rural
 	}
 	
 	triggered_planet_modifier = {
@@ -1597,7 +1604,7 @@ district_giga_frameworld_farming = {
 	}
 	
 	planet_modifier = {
-		planet_housing_add = 200
+		planet_housing_add = @frame_housing_rural
 	}
 	
 	triggered_planet_modifier = {
@@ -1735,7 +1742,7 @@ district_giga_frameworld_administrative = {
 	}
 	
 	planet_modifier = {
-		planet_housing_add = 500
+		planet_housing_add = @frame_housing
 	}
 
 	inline_script = {
@@ -1831,7 +1838,7 @@ district_giga_frameworld_temple = {
 	}
 	
 	planet_modifier = {
-		planet_housing_add = 500
+		planet_housing_add = @frame_housing
 	}
 
 	inline_script = {
@@ -1930,7 +1937,7 @@ district_giga_frameworld_synapse = {
 	}
 	
 	planet_modifier = {
-		planet_housing_add = 500
+		planet_housing_add = @frame_housing
 	}
 
 
@@ -2036,7 +2043,7 @@ district_giga_frameworld_simulation = {
 	}
 	
 	planet_modifier = {
-		planet_housing_add = 500
+		planet_housing_add = @frame_housing
 	}
 
 	inline_script = {
@@ -2265,7 +2272,7 @@ district_giga_frameworld_sanctuary_advanced = {
 	}
 	
 	planet_modifier = {
-		planet_housing_add = 500
+		planet_housing_add = 800
 		job_bio_trophy_add = 2000
 	}
 
@@ -2395,7 +2402,7 @@ district_giga_frameworld_science = {
 	}
 	
 	planet_modifier = {
-		planet_housing_add = 500
+		planet_housing_add = @frame_housing
 	}
 	
 	inline_script = {
@@ -2514,7 +2521,7 @@ district_giga_frameworld_refinery = {
     is_capped_by_modifier = no
 
     planet_modifier = {
-        planet_housing_add = 500
+        planet_housing_add = @frame_housing
     }
 
     resources = {
@@ -2884,7 +2891,7 @@ district_giga_frameworld_anticrime = {
 	}
 	
 	planet_modifier = {
-		planet_housing_add = 500
+		planet_housing_add = @frame_housing
 	}
 	
 	triggered_planet_modifier = {
@@ -2983,7 +2990,7 @@ district_giga_frameworld_amenities = {
 	}
 	
 	planet_modifier = {
-		planet_housing_add = 500
+		planet_housing_add = @frame_housing
 	}
 	
 	triggered_planet_modifier = {
@@ -3085,7 +3092,7 @@ district_giga_frameworld_amenities_dystopian = {
 	}
 
 	planet_modifier = {
-		planet_housing_add = 500
+		planet_housing_add = @frame_housing
 		planet_amenities_add = 50000
 	}
 
@@ -3257,7 +3264,7 @@ district_giga_frameworld_sentient_metal = {
 	}
 	
 	planet_modifier = {
-		planet_housing_add = 300
+		planet_housing_add = @frame_housing
 	}
 	
 	triggered_planet_modifier = {
@@ -3343,7 +3350,7 @@ district_giga_frameworld_negative_mass = {
 	}
 	
 	planet_modifier = {
-		planet_housing_add = 300
+		planet_housing_add = @frame_housing
 	}
 	
 	triggered_planet_modifier = {
@@ -3432,7 +3439,7 @@ district_giga_frameworld_supertensiles = {
 	}
 	
 	planet_modifier = {
-		planet_housing_add = 500
+		planet_housing_add = @frame_housing
 	}
 	
 	triggered_planet_modifier = {
@@ -3536,7 +3543,7 @@ district_giga_frameworld_fortress = {
 	}
 	
 	planet_modifier = {
-		planet_housing_add = 500
+		planet_housing_add = @frame_housing
 	}
 
 	conversion_ratio = 1
@@ -3624,7 +3631,7 @@ district_giga_frameworld_fortress_bunker = {
 	}
 	
 	planet_modifier = {
-		planet_housing_add = 500
+		planet_housing_add = @frame_housing
 	}
 	
 	conversion_ratio = 1
