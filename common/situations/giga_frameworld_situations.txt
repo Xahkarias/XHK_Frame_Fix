@@ -99,7 +99,7 @@ giga_situation_frameworld_outposts = {
                     }
                 }
                 consumer_goods = 0.001
-                food = 0.2
+                food = 0.002
                 multiplier = value:giga_frameworld_outpost_growth_job_upkeep|job|reassigner|checkType|yes|lithoid|no|
             }
             upkeep = {
@@ -109,7 +109,7 @@ giga_situation_frameworld_outposts = {
                     }
                 }
                 consumer_goods = 0.001
-                minerals = 0.2
+                minerals = 0.002
                 multiplier = value:giga_frameworld_outpost_growth_job_upkeep|job|reassigner|checkType|yes|lithoid|yes|
             }
 
