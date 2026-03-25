@@ -795,10 +795,11 @@ country_event = {
 								has_virtual_species_trait = yes
 							}
 						}
-						resettle_pop = {
-							pop = this
-							planet = event_target:target_frameworld
-						}
+                        resettle_pop_group = {
+                            POP_GROUP = this
+                            AMOUNT = 100
+                            PLANET = event_target:target_frameworld
+                        }
 					}
 				}
 			}

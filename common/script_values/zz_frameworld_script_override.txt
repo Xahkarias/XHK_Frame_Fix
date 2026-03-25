@@ -4,5 +4,7 @@ giga_frameworld_resettlement_count = {
     weight = trigger:pop_amount
     mult = 0.05
     round = yes
-    min = 400
+    divide = 100
+    round = yes
+    min = 4
 }
