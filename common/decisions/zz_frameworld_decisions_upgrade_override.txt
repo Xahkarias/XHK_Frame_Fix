@@ -1,6 +1,154 @@
+
+### CHANGING COST TO MATCH ECU MORE
+giga_frameworld_advanced_city = {
+    icon = decision_nexus_district
+    owned_planets_only = yes
+
+    enactment_time = 4800
+
+    resources = {
+        category = decisions
+        cost = {
+            trigger = {
+                exists = owner
+                owner = {
+                    is_gestalt = no
+                }
+            }
+            alloys = 7500
+        }
+        cost = {
+            trigger = {
+                exists = owner
+                owner = {
+                    is_gestalt = yes
+                }
+            }
+            minerals = 7500
+        }
+
+        cost = {
+            trigger = {
+                exists = owner
+                owner = {
+                    is_ai = no
+                }
+            }
+            influence = 150
+        }
+    }
+
+    potential = {
+        exists = owner
+        owner = {
+            giga_has_frameworld_origin = yes
+
+            if = {
+                limit = {
+                    is_machine_empire = yes
+                }
+                has_ascension_perk = ap_machine_worlds
+            }
+            else_if = {
+                limit = {
+                    is_hive_empire = yes
+                }
+                has_ascension_perk = ap_hive_worlds
+            }
+            else = {
+                has_ascension_perk = ap_arcology_project
+            }
+        }
+        giga_is_frame_world = yes
+        nor = {
+            has_planet_flag = frameworld_advanced_city
+            has_deposit = d_frameworld_advanced_nexus
+        }
+    }
+
+    allow = {
+        custom_tooltip_fail = {
+            not = {
+                has_planet_flag = frameworld_upgrade
+            }
+            text = giga_frameworld_upgrade_fail
+        }
+    }
+
+    effect = {
+        custom_tooltip = giga_frameworld_upgrade_desc
+        if = {
+            limit = {
+                owner = {
+                    is_hive_empire = yes
+                }
+            }
+            custom_tooltip = giga_frameworld_advanced_hive_effect
+            add_deposit = d_frameworld_advanced_hive
+        }
+        else_if = {
+            limit = {
+                owner = {
+                    is_machine_empire = yes
+                }
+            }
+            custom_tooltip = giga_frameworld_advanced_nexus_effect
+            add_deposit = d_frameworld_advanced_nexus
+        }
+        else = {
+            custom_tooltip = giga_frameworld_advanced_city_effect
+            add_deposit = d_frameworld_advanced_city
+        }
+
+        hidden_effect = {
+            add_modifier = {
+                modifier = frameworld_building_wreck_fix
+            }
+        }
+
+        hidden_effect = {
+            set_planet_flag = frameworld_advanced_city
+            validate_planet_buildings_and_districts = yes
+        }
+
+        hidden_effect = {
+            remove_modifier = frameworld_building_wreck_fix
+        }
+
+        save_event_target_as = giga_planet
+        hidden_effect = { owner = { country_event = { id = giga_frameworld_origin.007 } } }
+    }
+
+    ai_weight = {
+        weight = 100
+
+        modifier = {
+            factor = 10
+            free_district_slots < 1
+        }
+
+        modifier = {
+            factor = 50
+            or = {
+                num_districts = {
+                    type = district_giga_frameworld_city
+                    value >= 10
+                }
+                num_districts = {
+                    type = district_giga_frameworld_hive
+                    value >= 10
+                }
+                num_districts = {
+                    type = district_giga_frameworld_nexus
+                    value >= 10
+                }
+            }
+        }
+    }
+}
+
+
 ### ADDING REQUIREMENT OF PARADISE DOME
-
-
 giga_frameworld_advanced_sanctuary = {
 	icon = decision_leisure_arcology
 	owned_planets_only = yes
@@ -82,10 +230,7 @@ giga_frameworld_advanced_sanctuary = {
 	}
 }
 
-
-
 ### ADDING VALIDATION OF DISTRICTS AT THE END
-
 giga_frameworld_maginot = {
     icon = decision_maginot_planet
     owned_planets_only = yes
