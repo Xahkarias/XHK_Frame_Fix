@@ -67,3 +67,76 @@ giga_cloning = {
         weight = value:giga_specialist_no_resource_weight|JOB|giga_cloning|INDENTURED|0.5|
     }
 }
+
+giga_extra_healthcare = {
+    category = specialist
+    swappable_data = {
+        default = {
+            condition_string = SPECIALIST_JOB_TRIGGER
+            building_icon = building_medical_3
+        }
+    }
+
+    possible_pre_triggers = {
+        has_owner = yes
+        is_being_purged = no
+        is_being_assimilated = no
+        is_sapient = yes
+    }
+
+    possible_precalc = can_fill_specialist_job
+
+    planet_modifier = {
+        logistic_growth_mult = 0.03
+        bonus_pop_growth_mult = 0.03
+    }
+
+    resources = {
+        category = planet_doctors
+        upkeep = {
+            consumer_goods = 1
+        }
+    }
+
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                NOT = { has_valid_civic = civic_dystopian_society }
+            }
+        }
+        planet_amenities_add = 200
+        mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { has_valid_civic = civic_private_healthcare_corporate }
+        }
+        planet_amenities_add = 100
+        mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
+    }
+    triggered_planet_modifier = {
+        potential = {
+            planet = { has_planet_flag = has_private_clinics }
+        }
+        planet_amenities_add = 100
+        mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
+    }
+
+    weight = {
+        modifier = {
+            exists = owner
+            owner = { has_valid_civic = civic_private_healthcare_corporate }
+            weight = value:giga_specialist_weight|JOB|giga_extra_healthcare|RESOURCE|trade|INDENTURED|0.5|AMENITIES|yes|
+        }
+        modifier = {
+            exists = owner
+            owner = { not = { has_valid_civic = civic_private_healthcare_corporate } }
+            weight = value:giga_specialist_no_resource_weight|JOB|giga_extra_healthcare|INDENTURED|0.5|AMENITIES|yes|
+        }
+        multiply = 2
+    }
+
+    inline_script = jobs/automodding_priority_charisma
+}

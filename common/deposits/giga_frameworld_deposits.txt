@@ -92,7 +92,7 @@ d_frameworld_admin = {
             giga_planet_has_zombie_assembly_facilities = no
         }
 
-        job_healthcare_add = 100
+        job_giga_extra_healthcare_add = 75
 
         multiplier = modifier:giga_frameworld_growth_jobs_add
     }
@@ -130,7 +130,7 @@ d_frameworld_admin = {
             giga_planet_has_zombie_assembly_facilities = no
         }
 
-        job_healthcare_add = 50
+        job_giga_extra_healthcare_add = 50
 
         multiplier = value:giga_sequential_job_split|value|modifier:giga_frameworld_growth_jobs_add|interval|4|fraction|0.5|offset|0.5|
     }
@@ -150,26 +150,26 @@ d_frameworld_admin = {
             giga_planet_has_zombie_assembly_facilities = no
         }
 
-        job_giga_cloning_add = 50
+        job_giga_cloning_add = 75
 
         multiplier = value:giga_sequential_job_split|value|modifier:giga_frameworld_growth_jobs_add|interval|4|fraction|0.5|offset|0|
     }
-    triggered_planet_modifier = {
-        potential = {
-            exists = owner
-            owner = {
-                is_regular_empire = yes
-                giga_has_frameworld_origin = yes
-                is_synthetic_empire = no
-            }
-            giga_planet_has_cloning_assembly_facilities = yes
-            giga_planet_has_zombie_assembly_facilities = no
-        }
-
-        job_healthcare_add = 50
-
-        multiplier = value:giga_sequential_job_split|value|modifier:giga_frameworld_growth_jobs_add|interval|4|fraction|0.5|offset|0.5|
-    }
+    # triggered_planet_modifier = {
+    #     potential = {
+    #         exists = owner
+    #         owner = {
+    #             is_regular_empire = yes
+    #             giga_has_frameworld_origin = yes
+    #             is_synthetic_empire = no
+    #         }
+    #         giga_planet_has_cloning_assembly_facilities = yes
+    #         giga_planet_has_zombie_assembly_facilities = no
+    #     }
+    #
+    #     job_healthcare_add = 50
+    #
+    #     multiplier = value:giga_sequential_job_split|value|modifier:giga_frameworld_growth_jobs_add|interval|4|fraction|0.5|offset|0.5|
+    # }
 
     ####################################################################################################################
     # zombies
@@ -200,7 +200,7 @@ d_frameworld_admin = {
             giga_planet_has_zombie_assembly_facilities = yes
         }
 
-        job_healthcare_add = 50
+        job_giga_extra_healthcare_add = 50
 
         multiplier = value:giga_sequential_job_split|value|modifier:giga_frameworld_growth_jobs_add|interval|8|fraction|0.75|offset|0|
     }
@@ -218,22 +218,7 @@ d_frameworld_admin = {
             }
         }
 
-        job_roboticist_add = 50
-
-        multiplier = modifier:giga_frameworld_growth_jobs_add
-    }
-    # extra for synthetic ascension
-    triggered_planet_modifier = {
-        potential = {
-            exists = owner
-            owner = {
-                is_regular_empire = yes
-                giga_has_frameworld_origin = yes
-                has_country_flag = synthetic_empire
-            }
-        }
-
-        job_roboticist_add = 25
+        job_roboticist_add = 75
 
         multiplier = modifier:giga_frameworld_growth_jobs_add
     }
@@ -459,38 +444,8 @@ d_frameworld_core = {
             }
             not = { has_modifier = frameworld_crucible }
         }
-        job_replicator_add = 100
-
+        job_replicator_add = 75
         multiplier = modifier:giga_frameworld_growth_jobs_add
-    }
-
-    # triggered_planet_modifier = {
-    #     potential = {
-    #         exists = owner
-    #         owner = {
-    #             is_machine_empire = yes
-    #             giga_has_frameworld_origin = yes
-    #         }
-    #         has_modifier = frameworld_crucible
-    #     }
-
-    #     job_giga_extra_crucible_drone_add = 0.5
-
-    #     multiplier = value:giga_sequential_job_split|value|modifier:giga_frameworld_growth_jobs_add|interval|4|fraction|0.5|offset|0|
-    # }
-    triggered_planet_modifier = {
-        potential = {
-            exists = owner
-            owner = {
-                is_machine_empire = yes
-                giga_has_frameworld_origin = yes
-            }
-            has_modifier = frameworld_crucible
-        }
-
-        job_replicator_add = 100
-
-        multiplier = value:giga_sequential_job_split|value|modifier:giga_frameworld_growth_jobs_add|interval|4|fraction|0.5|offset|0.5|
     }
 
     ####################################################################################################################
