@@ -16,14 +16,14 @@ giga_cloning = {
 
     possible_precalc = can_fill_specialist_job
 
-    triggered_planet_modifier = {
+    triggered_planet_pop_group_modifier_for_all = {
         potential = {
             # added stop if population controls
             NOT = { has_modifier = planet_population_control }
         }
         bonus_pop_growth = 2
     }
-    triggered_planet_modifier = {
+    triggered_planet_pop_group_modifier_for_all = {
         potential = {
             exists = planet
             planet = {
@@ -39,7 +39,7 @@ giga_cloning = {
                 NOT = { has_modifier = planet_population_control }
             }
         }
-        bonus_pop_growth = 1
+        bonus_pop_growth = 0.5
     }
 
     resources = {

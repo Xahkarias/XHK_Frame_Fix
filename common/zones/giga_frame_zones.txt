@@ -314,6 +314,9 @@ zone_giga_frameworld_supertensiles = {
     included_building_sets = {
         giga_supertensile
     }
+    include = {
+        building_giga_asteroid_factory_supertensiles_one_planet
+    }
 
     #zone_sets = { giga_birch_insula_extra }
     planet_modifier = {
