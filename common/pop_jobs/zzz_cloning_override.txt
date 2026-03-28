@@ -42,6 +42,32 @@ giga_cloning = {
         bonus_pop_growth = 0.5
     }
 
+    triggered_planet_modifier = {
+        potential = {
+            # added stop if population controls
+            NOT = { has_modifier = planet_population_control }
+        }
+        fake_pop_growth_mod = 2
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = planet
+            planet = {
+                exists = owner
+                owner = {
+                    OR = {
+                        # added check for biogenesis
+                        has_tradition = tr_genetics_efficient_cloning
+                        has_tradition = tr_cloning_adopt
+                    }
+                }
+                # added stop if population controls
+                NOT = { has_modifier = planet_population_control }
+            }
+        }
+        fake_pop_growth_mod = 0.5
+    }
+
     resources = {
         category = planet_jobs
         upkeep = {
