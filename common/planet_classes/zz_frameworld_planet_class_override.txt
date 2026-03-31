@@ -37,6 +37,7 @@ pc_giga_frameworld = {
     orbit_lines = no
     colonizable = yes
     is_artificial_planet = yes
+    starting_district = district_giga_frameworld_city
 
     uses_alternative_skies_for_moons = no
     show_city = no
