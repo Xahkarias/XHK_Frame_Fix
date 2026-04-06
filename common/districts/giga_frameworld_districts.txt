@@ -2893,16 +2893,11 @@ district_giga_frameworld_anticrime = {
 	planet_modifier = {
 		planet_housing_add = @frame_housing
 	}
-	
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_gestalt = no }
-		}
-		modifier = {
-			job_enforcer_add = 100
-		}
-	}
+
+    inline_script = {
+        script = jobs/enforcers_add
+        AMOUNT = 100
+    }
 	
 	triggered_planet_modifier = {
 		potential = {

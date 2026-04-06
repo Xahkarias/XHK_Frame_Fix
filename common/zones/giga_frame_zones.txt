@@ -150,9 +150,21 @@ zone_giga_frameworld_anticrime = {
         potential = {
             owner = {
                 is_gestalt = no
+                NOT = {
+                    has_valid_civic = civic_dystopian_society
+                }
             }
         }
         job_enforcer_add = 300
+    }
+    triggered_district_planet_modifier = {
+        potential = {
+            owner = {
+                is_gestalt = no
+                has_valid_civic = civic_dystopian_society
+            }
+        }
+        job_dystopian_enforcer_add = 300
     }
     triggered_district_planet_modifier = {
         potential = {
