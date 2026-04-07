@@ -139,7 +139,13 @@ zone_giga_frameworld_anticrime = {
     included_building_sets = {
         government
     }
-    excluded_building_sets = { mining generator farming}
+    excluded_building_sets = {
+        mining generator farming
+    }
+    include = {
+        building_fe_security_1
+        building_fe_security_2
+    }
 
     #zone_sets = { giga_birch_insula_extra }
     planet_modifier = {
