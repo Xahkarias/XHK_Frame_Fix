@@ -2844,9 +2844,9 @@ district_giga_frameworld_refinery_crystals = {
 
 district_giga_frameworld_anticrime = {
 	base_buildtime = @advanced_time
-	#icon = district_penrose_generator
+	icon = district_giga_anticrime
 	is_capped_by_modifier = no
-	#overlay_icon = GFX_district_unity
+	overlay_icon = GFX_giga_district_crime
 	gridbox = district_arcology_leisure
 	district_background = district_arcology_leisure
 
