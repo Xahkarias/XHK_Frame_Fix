@@ -301,6 +301,7 @@ slot_giga_frameworld_ehof_negative = {
 
 	included_zone_sets = {
 		ehof
+        ehof_negative
 	}
 
 	unlock = { # planet scope
@@ -316,6 +317,7 @@ slot_giga_frameworld_ehof_sentient = {
 
 	included_zone_sets = {
 		ehof
+        ehof_sentient
 	}
 
 	unlock = { # planet scope
