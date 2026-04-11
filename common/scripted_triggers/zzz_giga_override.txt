@@ -1,0 +1,16 @@
+# This = Planet
+giga_can_resettle_planet = {
+    if = {
+        limit = {
+            exists = owner
+            owner = {
+                giga_has_frameworld_origin = yes
+            }
+            nor = {
+                giga_is_excluded_from_frameworld_resettlement = yes
+                has_planet_flag = giga_frameworld@owner
+            }
+        }
+        always = no
+    }
+}

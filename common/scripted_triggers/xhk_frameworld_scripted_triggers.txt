@@ -1,0 +1,9 @@
+
+
+
+giga_is_excluded_from_frameworld_resettlement = {
+    or = {
+        is_planet_class = pc_cosmogenesis_world
+        has_planet_flag = giga_excluded_frameworld_resettlement
+    }
+}
