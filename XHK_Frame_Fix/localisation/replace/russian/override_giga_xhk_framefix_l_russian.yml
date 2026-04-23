@@ -1,0 +1,19 @@
+﻿l_russian:
+  
+  giga_frameworld_docs_expansion_desc:99 "Additional districts can be added through §YPlanetary Decisions§! and §YHarvesting Asteroids§!. Each expansion adds several incremental bonuses to the §Y$pc_giga_frameworld$§!, regardless of which method is used. All expansion bonuses can be found in the §YPlanetary Features§! menu.\nExpansion decisions come in three varieties:\n\n- §T$giga_frameworld_expand$§!: Costs £alloys£ $alloys$, increasing in cost each time it is enacted. Additionally provides a §YBuilding Slot§! for every two uses. Affected by £mod_megastructures_cost_mult£ §Y$mod_megastructures_cost_mult$§!.\n- §T$giga_frameworld_reorganise$§!: Costs a large amount of £influence£ $influence$ and speeds up several common actions.\n- §T$giga_frameworld_expand_mass$§!: Costs £giga_sr_bulk_matter£ $giga_sr_bulk_matter$, and adds one to §Y$mod_district_giga_frameworld_mining_max_add$§! per use."
+  giga_frameworld_docs_asteroids_desc:99 "The §Y$pc_giga_frameworld$§! can be expanded by harvesting asteroids with the §Y$frameworld_harvest_0$§! megastructure. Each harvested asteroid adds one district, a variety of incremental bonuses, and adds one to §Y$mod_district_giga_frameworld_mining_max_add$§! per four harvests. Harvesting cost scales with £mod_planet_clear_blocker_cost_mult£ §Y$MOD_COUNTRY_CLEAR_BLOCKER_COST_MULT$§!.\n\nAsteroid harvesting should be your primary expansion focus. Systems with harvestable asteroids are indicated in their galaxy map tooltip:\n\n\"$frameworld_has_harvestable_asteroid$\" indicates asteroids without any resource deposits, ideal for harvesting.\n\"$frameworld_has_harvestable_asteroid_2$\" indicates that only asteroids with resource deposits remain, which you may wish to delay harvesting.\n\"$frameworld_has_harvestable_asteroid_3$\" indicates that only asteroids with strategic resource deposits remain, which are least suited to harvesting."
+  
+  district_giga_frameworld_amenities_dystopian_limit:99 "$district_giga_frameworld_amenities_dystopian_plural$ are limited to §Y1§! per §Y10,000§! £pop£ Pops\n "
+  
+  frameworld_harvest_0_CONSTRUCTION_INFO_DELAYED:99 "$giga_list_additional_data$ - Expands the §Y$pc_giga_frameworld$§! once, additionally adding §G+1§! §Y$mod_district_giga_frameworld_mining_max_add$ per 4 harvests§!.\n\nCost scales with £mod_planet_clear_blocker_cost_mult£ §Y$MOD_COUNTRY_CLEAR_BLOCKER_COST_MULT$§! modifiers."
+  frameworld_asteroid_fake_tooltip:99 "Add §Y$d_frameworld_asteroid$§! to the §Y$pc_giga_frameworld$§!, with the following result:\n    $mod_district_giga_frameworld_mining_max_add$: §G+0.25§!""
+  
+  giga_frameworld_advanced_industrial_foundry_effect:99 "Replaces the $pc_giga_frameworld$'s §Y$district_giga_frameworld_foundry_plural$§! with a smaller number of §Y$district_giga_frameworld_foundry_advanced_plural$§!.\n\n§Y$district_giga_frameworld_foundry_advanced_plural$§! provide §Gdouble§! £job_fabricator£§Y[owner.GetAlloyProducer] jobs§!."
+  giga_frameworld_advanced_industrial_factory_effect:99 "Replaces the $pc_giga_frameworld$'s §Y$district_giga_frameworld_factory_plural$§! with a smaller number of §Y$district_giga_frameworld_factory_advanced_plural$§!.\n\n§Y$district_giga_frameworld_factory_advanced_plural$§! provide §Gdouble§! [owner.GetArtisanIcon]§Y[owner.GetArtisan] jobs§!."
+  
+  giga_frameworld_baol_life_seed_effects:99 "§Y400 $NAME_Nu_Baol$ Pops§! are spawned on [Root.GetName]"
+  giga_frameworld_baol_life_seed_effects_2:99 "§Y600 $NAME_Nu_Baol$ Pops§! are spawned on [Root.GetName]"
+  
+  
+  
+  

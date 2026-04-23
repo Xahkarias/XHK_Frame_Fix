@@ -1,3 +1,0 @@
-Zone building set fix for automation
-Increased empire size from outposts
-Moved all tankbound overseers to city district only
