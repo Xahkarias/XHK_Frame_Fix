@@ -1,0 +1,32 @@
+## ADDED ABILITY TO USE THIS ON THE FRAME
+decision_living_metal_distribution = {
+    owned_planets_only = yes
+    sound = event_administrative_work
+    icon = decision_distribute_living_metal
+
+    resources = {
+        category = decisions
+        cost = { sr_living_metal = 250 }
+    }
+
+    potential = {
+        exists = owner
+        owner = { is_galvanic_empire = yes }
+        OR = {
+            is_artificial = no
+            is_planet_class = pc_giga_frameworld
+        }
+    }
+
+    allow = {
+        NOT = { has_modifier = living_metal_distribution_effect }
+    }
+
+    effect = {
+        add_modifier = { modifier = living_metal_distribution_effect years = 5 }
+    }
+
+    ai_weight = {
+        weight = 1
+    }
+}
