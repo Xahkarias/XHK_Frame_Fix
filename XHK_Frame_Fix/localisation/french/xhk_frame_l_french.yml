@@ -66,3 +66,5 @@
   
   giga_frameworld_server_shut_down:99 "§GFRAMEWORLD§! VIRTUAL SERVER SHUTDOWN"
   giga_frameworld_server_shut_down_desc:99 "§GUSE THIS INSTEAD OF THE NORMAL VIRTUAL SHUT DOWN DECISION§!"
+  
+  giga_civic_tooltip_not_planet_forger:99 "Does NOT have a ['concept_world_forgers_civics'] Civic"
