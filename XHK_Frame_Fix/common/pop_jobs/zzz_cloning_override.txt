@@ -113,8 +113,8 @@ giga_extra_healthcare = {
     possible_precalc = can_fill_specialist_job
 
     planet_modifier = {
-        logistic_growth_mult = 0.03
-        bonus_pop_growth_mult = 0.03
+        logistic_growth_mult = 0.05
+        bonus_pop_growth_mult = 0.05
     }
 
     resources = {
