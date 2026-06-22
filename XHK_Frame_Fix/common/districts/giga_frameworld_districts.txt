@@ -42,8 +42,7 @@
 district_giga_frameworld_city = {
 	base_buildtime = @city_time
 	icon = district_city
-	is_capped_by_modifier = no
-	
+
 	overlay_icon = GFX_district_government
 	exempt_from_ai_planet_specialization = yes
 	has_primary_zone = yes
@@ -60,7 +59,7 @@ district_giga_frameworld_city = {
 		OR = {
 			uses_district_set = giga_frameworld
 		}
-		not = { has_planet_flag = frameworld_advanced_city }
+		not = { has_carrier_flag = frameworld_advanced_city }
 	}
 	
 	potential = {
@@ -70,7 +69,7 @@ district_giga_frameworld_city = {
             NOT = { has_menace_perk = menp_behemoth_mind_meld }
         }
 		uses_district_set = giga_frameworld
-		not = { has_planet_flag = frameworld_advanced_city }
+		not = { has_carrier_flag = frameworld_advanced_city }
 	}
 	
 	conversion_ratio = 1
@@ -126,7 +125,6 @@ district_giga_frameworld_city = {
 district_giga_frameworld_city_advanced = {
 	base_buildtime = @city_time
 	icon = district_city
-	is_capped_by_modifier = no
 	
 	overlay_icon = GFX_district_government
 	exempt_from_ai_planet_specialization = yes
@@ -142,7 +140,7 @@ district_giga_frameworld_city_advanced = {
 		exists = from
 		from = { is_gestalt = no }
 		uses_district_set = giga_frameworld
-		has_planet_flag = frameworld_advanced_city
+		has_carrier_flag = frameworld_advanced_city
 	}
 	
 	potential = {
@@ -152,7 +150,7 @@ district_giga_frameworld_city_advanced = {
             NOT = { has_menace_perk = menp_behemoth_mind_meld }
         }
 		uses_district_set = giga_frameworld
-		has_planet_flag = frameworld_advanced_city
+		has_carrier_flag = frameworld_advanced_city
 	}
 	
 	conversion_ratio = 1
@@ -210,7 +208,7 @@ district_giga_frameworld_city_advanced = {
 district_giga_frameworld_hive = {
 	base_buildtime = @city_time
 	icon = district_hive
-	is_capped_by_modifier = no
+	
 	
 	overlay_icon = GFX_district_government
 	exempt_from_ai_planet_specialization = yes
@@ -225,7 +223,7 @@ district_giga_frameworld_hive = {
 	show_on_uncolonized = {
 		from = { is_hive_empire = yes }
 		uses_district_set = giga_frameworld
-		not = { has_planet_flag = frameworld_advanced_city }
+		not = { has_carrier_flag = frameworld_advanced_city }
 	}
 	
 	potential = {
@@ -235,7 +233,7 @@ district_giga_frameworld_hive = {
             NOT = { has_menace_perk = menp_behemoth_mind_meld }
         }
 		uses_district_set = giga_frameworld
-		not = { has_planet_flag = frameworld_advanced_city }
+		not = { has_carrier_flag = frameworld_advanced_city }
 	}
 	
 	conversion_ratio = 1
@@ -278,8 +276,7 @@ district_giga_frameworld_hive = {
 district_giga_frameworld_hive_advanced = {
 	base_buildtime = @advanced_time
 	icon = district_hive
-	is_capped_by_modifier = no
-	
+
 	overlay_icon = GFX_district_government
 	exempt_from_ai_planet_specialization = yes
 	has_primary_zone = yes
@@ -293,7 +290,7 @@ district_giga_frameworld_hive_advanced = {
 	show_on_uncolonized = {
 		from = { is_hive_empire = yes }
 		uses_district_set = giga_frameworld
-		has_planet_flag = frameworld_advanced_city
+		has_carrier_flag = frameworld_advanced_city
 	}
 	
 	potential = {
@@ -303,7 +300,7 @@ district_giga_frameworld_hive_advanced = {
             NOT = { has_menace_perk = menp_behemoth_mind_meld }
         }
 		uses_district_set = giga_frameworld
-		has_planet_flag = frameworld_advanced_city
+		has_carrier_flag = frameworld_advanced_city
 	}
 	
 	conversion_ratio = 1
@@ -349,7 +346,6 @@ district_giga_frameworld_hive_advanced = {
 district_giga_frameworld_nexus = {
 	base_buildtime = @city_time
 	icon = district_nexus
-	is_capped_by_modifier = no
 	
 	overlay_icon = GFX_district_government
 	exempt_from_ai_planet_specialization = yes
@@ -364,7 +360,7 @@ district_giga_frameworld_nexus = {
 	show_on_uncolonized = {
 		from = { is_machine_empire = yes }
 		uses_district_set = giga_frameworld
-		not = { has_planet_flag = frameworld_advanced_city }
+		not = { has_carrier_flag = frameworld_advanced_city }
 	}
 	
 	potential = {
@@ -374,7 +370,7 @@ district_giga_frameworld_nexus = {
             NOT = { has_menace_perk = menp_behemoth_mind_meld }
         }
 		uses_district_set = giga_frameworld
-		not = { has_planet_flag = frameworld_advanced_city }
+		not = { has_carrier_flag = frameworld_advanced_city }
 	}
 
 	allow = {
@@ -440,7 +436,6 @@ district_giga_frameworld_nexus = {
 district_giga_frameworld_nexus_advanced = {
 	base_buildtime = @advanced_time
 	icon = district_nexus
-	is_capped_by_modifier = no
 	
 	overlay_icon = GFX_district_government
 	exempt_from_ai_planet_specialization = yes
@@ -455,7 +450,7 @@ district_giga_frameworld_nexus_advanced = {
 	show_on_uncolonized = {
 		from = { is_machine_empire = yes }
 		uses_district_set = giga_frameworld
-		has_planet_flag = frameworld_advanced_city
+		has_carrier_flag = frameworld_advanced_city
 	}
 	
 	potential = {
@@ -465,7 +460,7 @@ district_giga_frameworld_nexus_advanced = {
             NOT = { has_menace_perk = menp_behemoth_mind_meld }
         }
 		uses_district_set = giga_frameworld
-		has_planet_flag = frameworld_advanced_city
+		has_carrier_flag = frameworld_advanced_city
 	}
 
 	allow = {
@@ -635,7 +630,7 @@ district_giga_frameworld_mindlink = {
         potential = {
             exists = owner
             owner = { is_regular_empire = yes }
-            has_planet_flag = frameworld_advanced_city
+            has_carrier_flag = frameworld_advanced_city
         }
         modifier = {
             job_transference_volunteer_add = 1500
@@ -660,7 +655,7 @@ district_giga_frameworld_mindlink = {
             owner = {
                 is_gestalt = yes
             }
-            has_planet_flag = frameworld_advanced_city
+            has_carrier_flag = frameworld_advanced_city
         }
         modifier = {
             job_transference_drone_add = 1500
@@ -697,7 +692,7 @@ district_giga_frameworld_mindlink = {
 district_giga_frameworld_foundry = {
 	base_buildtime = @city_time
 	icon = district_arcology_arms_industry
-	is_capped_by_modifier = no
+	
 	overlay_icon = GFX_district_alloys
 	
 	zone_slots = {
@@ -715,13 +710,13 @@ district_giga_frameworld_foundry = {
 	show_on_uncolonized = {
 		exists = from
 		uses_district_set = giga_frameworld
-		not = { has_planet_flag = frameworld_advanced_industrial }
+		not = { has_carrier_flag = frameworld_advanced_industrial }
 	}
 	
 	potential = {
 		exists = owner
 		uses_district_set = giga_frameworld
-		not = { has_planet_flag = frameworld_advanced_industrial }
+		not = { has_carrier_flag = frameworld_advanced_industrial }
 	}
 	
 	conversion_ratio = 0.5
@@ -785,7 +780,7 @@ district_giga_frameworld_foundry = {
 district_giga_frameworld_foundry_advanced = {
 	base_buildtime = @advanced_time
 	icon = district_arcology_arms_industry
-	is_capped_by_modifier = no
+	
 	overlay_icon = GFX_district_alloys
 	
 	zone_slots = {
@@ -795,13 +790,13 @@ district_giga_frameworld_foundry_advanced = {
 	show_on_uncolonized = {
 		exists = from
 		uses_district_set = giga_frameworld
-		has_planet_flag = frameworld_advanced_industrial
+		has_carrier_flag = frameworld_advanced_industrial
 	}
 	
 	potential = {
 		exists = owner
 		uses_district_set = giga_frameworld
-		has_planet_flag = frameworld_advanced_industrial
+		has_carrier_flag = frameworld_advanced_industrial
 	}
 	
 	conversion_ratio = 2
@@ -867,7 +862,7 @@ district_giga_frameworld_foundry_advanced = {
 district_giga_frameworld_factory = {
 	base_buildtime = @city_time
 	icon = district_arcology_civilian_industry
-	is_capped_by_modifier = no
+	
 	overlay_icon = GFX_district_consumer_goods
 
 	zone_slots = {
@@ -885,7 +880,7 @@ district_giga_frameworld_factory = {
 	show_on_uncolonized = {
 		exists = from
 		uses_district_set = giga_frameworld
-		not = { has_planet_flag = frameworld_advanced_industrial }
+		not = { has_carrier_flag = frameworld_advanced_industrial }
 		from = {
 			or = {
 				is_gestalt = no
@@ -899,7 +894,7 @@ district_giga_frameworld_factory = {
 	potential = {
 		exists = owner
 		uses_district_set = giga_frameworld
-		not = { has_planet_flag = frameworld_advanced_industrial }
+		not = { has_carrier_flag = frameworld_advanced_industrial }
 		owner = {
 			or = {
 				is_gestalt = no
@@ -956,7 +951,7 @@ district_giga_frameworld_factory = {
 district_giga_frameworld_factory_advanced = {
 	base_buildtime = @advanced_time
 	icon = district_arcology_civilian_industry
-	is_capped_by_modifier = no
+	
 	overlay_icon = GFX_district_consumer_goods
 
 	zone_slots = {
@@ -966,7 +961,7 @@ district_giga_frameworld_factory_advanced = {
 	show_on_uncolonized = {
 		exists = from
 		uses_district_set = giga_frameworld
-		has_planet_flag = frameworld_advanced_industrial
+		has_carrier_flag = frameworld_advanced_industrial
 		from = {
 			or = {
 				is_gestalt = no
@@ -979,7 +974,7 @@ district_giga_frameworld_factory_advanced = {
 	potential = {
 		exists = owner
 		uses_district_set = giga_frameworld
-		has_planet_flag = frameworld_advanced_industrial
+		has_carrier_flag = frameworld_advanced_industrial
 		owner = {
 			or = {
 				is_gestalt = no
@@ -1041,7 +1036,7 @@ district_giga_frameworld_factory_advanced = {
 district_giga_frameworld_trade = {
 	base_buildtime = @city_time
 	icon = district_hab_commercial
-	is_capped_by_modifier = no
+	
 	overlay_icon = GFX_district_trade
 	district_background = district_arcology_trade
 	gridbox = district_arcology_trade
@@ -1160,7 +1155,7 @@ district_giga_frameworld_trade = {
 district_giga_frameworld_generator = {
 	base_buildtime = @base_time
 	icon = district_hab_energy
-	is_capped_by_modifier = no
+	
 	overlay_icon = GFX_district_energy
 	#gridbox = district_generator
 	
@@ -1170,12 +1165,12 @@ district_giga_frameworld_generator = {
 
 	show_on_uncolonized = {
 		uses_district_set = giga_frameworld
-		not = { has_planet_flag = frameworld_penrose }
+		not = { has_carrier_flag = frameworld_penrose }
 	}
 	
 	potential = {
 		uses_district_set = giga_frameworld
-		not = { has_planet_flag = frameworld_penrose }
+		not = { has_carrier_flag = frameworld_penrose }
 	}
 
 	prerequisites = {
@@ -1263,7 +1258,7 @@ district_giga_frameworld_generator = {
 district_giga_frameworld_penrose = {
 	base_buildtime = @mega_time
 	#icon = district_hab_energy
-	is_capped_by_modifier = no
+	
 	overlay_icon = GFX_district_energy
 	gridbox = district_generator
 	#district_background = district_giga_frame_penrose_bg
@@ -1274,12 +1269,12 @@ district_giga_frameworld_penrose = {
 
 	show_on_uncolonized = {
 		uses_district_set = giga_frameworld
-		has_planet_flag = frameworld_penrose
+		has_carrier_flag = frameworld_penrose
 	}
 	
 	potential = {
 		uses_district_set = giga_frameworld
-		has_planet_flag = frameworld_penrose
+		has_carrier_flag = frameworld_penrose
 	}
 	
 	conversion_ratio = 4
@@ -1364,7 +1359,7 @@ district_giga_frameworld_penrose = {
 district_giga_frameworld_mining = {
 	base_buildtime = @base_time
 	icon = district_hab_mining
-    inherits_capped_modifiers_from = district_mining
+    shared_capacity_modifier = district_mining
     is_uncapped = {
         always = no
     }
@@ -1376,12 +1371,12 @@ district_giga_frameworld_mining = {
 
 	show_on_uncolonized = {
 		uses_district_set = giga_frameworld
-		not = { has_planet_flag = frameworld_decompressor }
+		not = { has_carrier_flag = frameworld_decompressor }
 	}
 	
 	potential = {
 		uses_district_set = giga_frameworld
-		not = { has_planet_flag = frameworld_decompressor }
+		not = { has_carrier_flag = frameworld_decompressor }
 	}
 
 	prerequisites = {
@@ -1469,7 +1464,7 @@ district_giga_frameworld_mining = {
 district_giga_frameworld_decompressor = {
 	base_buildtime = @mega_time
 	#icon = district_hab_mining
-	is_capped_by_modifier = no
+	
 	overlay_icon = GFX_district_minerals
 	gridbox = district_mining
 	#district_background = district_giga_frame_decompressor_bg
@@ -1480,12 +1475,12 @@ district_giga_frameworld_decompressor = {
 
 	show_on_uncolonized = {
 		uses_district_set = giga_frameworld
-		has_planet_flag = frameworld_decompressor
+		has_carrier_flag = frameworld_decompressor
 	}
 	
 	potential = {
 		uses_district_set = giga_frameworld
-		has_planet_flag = frameworld_decompressor
+		has_carrier_flag = frameworld_decompressor
 	}
 	
 	conversion_ratio = 4
@@ -1570,7 +1565,7 @@ district_giga_frameworld_decompressor = {
 district_giga_frameworld_farming = {
 	base_buildtime = @base_time
 	icon = district_farming
-	is_capped_by_modifier = no
+	
 	overlay_icon = GFX_district_food
 	
 	zone_slots = {
@@ -1686,7 +1681,7 @@ district_giga_frameworld_farming = {
 district_giga_frameworld_administrative = {
 	base_buildtime = @city_time
 	icon = district_arcology_administrative
-	is_capped_by_modifier = no
+	
 	overlay_icon = GFX_district_unity
 	
 	zone_slots = {
@@ -1783,7 +1778,7 @@ district_giga_frameworld_administrative = {
 district_giga_frameworld_temple = {
 	base_buildtime = @city_time
 	icon = district_arcology_administrative
-	is_capped_by_modifier = no
+	
 	overlay_icon = GFX_district_unity
 
 	zone_slots = {
@@ -1883,7 +1878,7 @@ district_giga_frameworld_temple = {
 district_giga_frameworld_synapse = {
 	base_buildtime = @city_time
 	icon = district_arcology_administrative
-	is_capped_by_modifier = no
+	
 	overlay_icon = GFX_district_unity
 	
 	zone_slots = {
@@ -1987,7 +1982,7 @@ district_giga_frameworld_synapse = {
 district_giga_frameworld_simulation = {
 	base_buildtime = @city_time
 	icon = district_arcology_administrative
-	is_capped_by_modifier = no
+	
 	overlay_icon = GFX_district_unity
 	
 	zone_slots = {
@@ -2082,7 +2077,7 @@ district_giga_frameworld_simulation = {
 district_giga_frameworld_sanctuary = {
 	base_buildtime = @city_time
 	icon = district_arcology_administrative
-	is_capped_by_modifier = no
+	
 	overlay_icon = GFX_district_unity
 
 	zone_slots = {
@@ -2096,7 +2091,7 @@ district_giga_frameworld_sanctuary = {
 			has_valid_civic = civic_machine_servitor
 			# has_technology = "tech_paradise_dome"
 		}
-		not = { has_planet_flag = frameworld_advanced_sanctuary }
+		not = { has_carrier_flag = frameworld_advanced_sanctuary }
 		uses_district_set = giga_frameworld
 	}
 	
@@ -2107,7 +2102,7 @@ district_giga_frameworld_sanctuary = {
 			has_valid_civic = civic_machine_servitor
 			# has_technology = "tech_paradise_dome"
 		}
-		not = { has_planet_flag = frameworld_advanced_sanctuary }
+		not = { has_carrier_flag = frameworld_advanced_sanctuary }
 		uses_district_set = giga_frameworld
 	}
 
@@ -2213,7 +2208,7 @@ district_giga_frameworld_sanctuary = {
 district_giga_frameworld_sanctuary_advanced = {
 	base_buildtime = @mega_time
 	icon = district_arcology_administrative
-	is_capped_by_modifier = no
+	
 	overlay_icon = GFX_district_unity
 	
 	zone_slots = {
@@ -2227,7 +2222,7 @@ district_giga_frameworld_sanctuary_advanced = {
 			has_valid_civic = civic_machine_servitor
 			has_technology = "tech_paradise_dome"
 		}
-		has_planet_flag = frameworld_advanced_sanctuary
+		has_carrier_flag = frameworld_advanced_sanctuary
 		uses_district_set = giga_frameworld
 	}
 	
@@ -2238,7 +2233,7 @@ district_giga_frameworld_sanctuary_advanced = {
 			has_valid_civic = civic_machine_servitor
 			has_technology = "tech_paradise_dome"
 		}
-		has_planet_flag = frameworld_advanced_sanctuary
+		has_carrier_flag = frameworld_advanced_sanctuary
 		uses_district_set = giga_frameworld
 	}
 
@@ -2350,7 +2345,7 @@ district_giga_frameworld_sanctuary_advanced = {
 district_giga_frameworld_science = {
 	base_buildtime = @advanced_time
 	icon = district_hab_science
-	is_capped_by_modifier = no
+	
 	overlay_icon = GFX_district_research
 	# gridbox = district_arcology_research
 	# district_background = district_arcology_research
@@ -2518,7 +2513,7 @@ district_giga_frameworld_refinery = {
     overlay_icon = GFX_giga_district_strategic_resources
     gridbox = district_industrial
     district_background = district_giga_frameworld_refinery
-    is_capped_by_modifier = no
+    
 
     planet_modifier = {
         planet_housing_add = @frame_housing
@@ -2845,7 +2840,7 @@ district_giga_frameworld_refinery_crystals = {
 district_giga_frameworld_anticrime = {
 	base_buildtime = @advanced_time
 	icon = district_giga_anticrime
-	is_capped_by_modifier = no
+	
 	overlay_icon = GFX_giga_district_crime
 	gridbox = district_arcology_leisure
 	district_background = district_arcology_leisure
@@ -2930,7 +2925,7 @@ district_giga_frameworld_amenities = {
 	icon = district_arcology_leisure
 	district_background = district_resort_secondary
 	overlay_icon = GFX_district_amenities
-	is_capped_by_modifier = no
+	
 	
 	zone_slots = {
 		slot_giga_frameworld_amenities
@@ -3025,7 +3020,10 @@ district_giga_frameworld_amenities_dystopian = {
 	base_buildtime = @advanced_time
 	icon = district_arcology_leisure
 	overlay_icon = GFX_district_amenities
-	is_capped_by_modifier = yes
+    shared_capacity_modifier = district_giga_frameworld_amenities_dystopian
+    is_uncapped = {
+        always = no
+    }
 
 	zone_slots = {
 		slot_giga_frameworld_amenities
@@ -3109,7 +3107,7 @@ district_giga_frameworld_amenities_dystopian = {
 # district_giga_frameworld_amenities_gestalt = {
 # 	base_buildtime = @advanced_time
 # 	icon = district_arcology_leisure
-# 	is_capped_by_modifier = no
+# 	
 	
 # 	show_on_uncolonized = {
 # 		exists = from
@@ -3186,7 +3184,7 @@ district_giga_frameworld_amenities_dystopian = {
 
 # 	triggered_planet_modifier = {
 # 		potential = {
-# 			has_planet_flag = frameworld_advanced_city
+# 			has_carrier_flag = frameworld_advanced_city
 # 		}
 # 		modifier = {
 # 			job_frame_maintenance_overseer_add = 2
@@ -3215,7 +3213,7 @@ district_giga_frameworld_amenities_dystopian = {
 district_giga_frameworld_sentient_metal = {
 	base_buildtime = @advanced_time
 	icon = district_giga_sentient_metal
-	is_capped_by_modifier = no
+	
 	overlay_icon = GFX_giga_district_sentient_metal
 	district_background = district_giga_frameworld_sentient_metal
 	gridbox = district_giga_birch_ktisma_sentient_metal
@@ -3299,7 +3297,7 @@ district_giga_frameworld_sentient_metal = {
 district_giga_frameworld_negative_mass = {
 	base_buildtime = @advanced_time
 	icon = district_giga_negative_mass
-	is_capped_by_modifier = no
+	
 	overlay_icon = GFX_giga_district_negative_mass
 	district_background = district_giga_frameworld_negative_mass
 	gridbox = district_giga_birch_orykta_negative_mass
@@ -3391,7 +3389,7 @@ district_giga_frameworld_supertensiles = {
 	icon = district_giga_supertensiles
 	overlay_icon = GFX_giga_district_supertensiles
 	district_background = district_giga_frameworld_supertensiles
-	is_capped_by_modifier = no
+	
 	
 	zone_slots = {
 		slot_giga_frameworld_supertensiles
@@ -3495,7 +3493,7 @@ district_giga_frameworld_fortress = {
 	icon = district_arcology_fortress
 	overlay_icon = GFX_district_fortress
 	#icon = district_maginot_world_bunkers
-	is_capped_by_modifier = no
+	
 	
 	zone_slots = {
 		slot_giga_frameworld_fortress
@@ -3586,7 +3584,7 @@ district_giga_frameworld_fortress_bunker = {
 	base_buildtime = @advanced_time
 	#overlay_icon = GFX_district_fortress
 	icon = district_maginot_world_bunkers
-	is_capped_by_modifier = no
+	
 	district_background = district_arcology_fortress
 	gridbox = district_arcology_fortress
 	
@@ -3690,12 +3688,12 @@ district_giga_frameworld_maginot_shield_generators = {
 	}
 
 	show_on_uncolonized = {
-		has_planet_flag = frameworld_maginot
+		has_carrier_flag = frameworld_maginot
 		uses_district_set = giga_frameworld
 	}
 	
 	potential = {
-		has_planet_flag = frameworld_maginot
+		has_carrier_flag = frameworld_maginot
 		uses_district_set = giga_frameworld
 	}
 	
@@ -3793,12 +3791,12 @@ district_giga_frameworld_maginot_planetary_cannons = {
 	}
 
 	show_on_uncolonized = {
-		has_planet_flag = frameworld_maginot
+		has_carrier_flag = frameworld_maginot
 		uses_district_set = giga_frameworld
 	}
 	
 	potential = {
-		has_planet_flag = frameworld_maginot
+		has_carrier_flag = frameworld_maginot
 		uses_district_set = giga_frameworld
 	}
 	

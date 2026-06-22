@@ -144,7 +144,7 @@ giga_extra_healthcare = {
     }
     triggered_planet_modifier = {
         potential = {
-            planet = { has_planet_flag = has_private_clinics }
+            planet = { has_carrier_flag = has_private_clinics }
         }
         planet_amenities_add = 100
         mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
