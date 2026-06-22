@@ -125,7 +125,7 @@ country_event = {
 
 		capital_scope = {
 			# associate the frameworld with the country too
-			set_planet_flag = giga_frameworld@root
+			set_carrier_flag = giga_frameworld@root
 
 			# clear the conquered modifier which apparently gets executed BEFORE the start event
 			remove_modifier = frameworld_conquered
@@ -657,7 +657,7 @@ country_event = {
 	desc = {
 		trigger = { 
 			event_target:giga_planet = { 
-				has_planet_flag = frameworld_expanded_infrastructure_2
+				has_carrier_flag = frameworld_expanded_infrastructure_2
 			} 
 		}
 		text = giga_frameworld_origin.012.desc.2
@@ -665,7 +665,7 @@ country_event = {
 	desc = {
 		trigger = { 
 			event_target:giga_planet = { 
-				not = { has_planet_flag = frameworld_expanded_infrastructure_2}
+				not = { has_carrier_flag = frameworld_expanded_infrastructure_2}
 			} 
 		}
 		text = giga_frameworld_origin.012.desc
@@ -735,7 +735,7 @@ country_event = {
 	
 	immediate = {
 		random_owned_planet = {
-			limit = { has_planet_flag = giga_frameworld@root }
+			limit = { has_carrier_flag = giga_frameworld@root }
 			save_event_target_as = target_frameworld
 		}
 
@@ -872,7 +872,7 @@ country_event = {
 						can_have_frameworld_outpost = yes
                         not = { is_planet_class = pc_birch}
 					}
-					set_planet_flag = frameworld_built_outpost
+					set_carrier_flag = frameworld_built_outpost
 					#giga_frameworld_create_outpost = { WHO = root RESETTLED = yes}
 					#root = {
 					#	giga_frameworld_recalculate_outpost_bonus = yes
@@ -929,7 +929,7 @@ country_event = {
 		name = giga_frameworld_origin.101.a
 		hidden_effect = { 
 			set_country_flag = frameworld_resettled_conquest 
-			from = { remove_planet_flag = frameworld_built_outpost }
+			from = { remove_carrier_flag = frameworld_built_outpost }
 		}
 	}
 }
@@ -943,7 +943,7 @@ country_event = {
 #	is_triggered_only = yes
 #
 #	trigger = {
-#		has_planet_flag = giga_frameworld_outpost
+#		has_carrier_flag = giga_frameworld_outpost
 #		exists = owner
 #		owner = {
 #			giga_has_frameworld_origin = no
@@ -1224,7 +1224,7 @@ planet_event = {
 			giga_has_frameworld_origin = yes
 		}
 		nor = {
-			has_planet_flag = giga_frameworld@from
+			has_carrier_flag = giga_frameworld@from
             giga_is_excluded_from_frameworld_resettlement = yes
 		}
 	}
@@ -1858,7 +1858,7 @@ country_event = {
 			if = {
 				limit = {
 					event_target:frameworld = {
-						has_planet_flag = frameworld_maginot
+						has_carrier_flag = frameworld_maginot
 					}
 				}
 
@@ -1981,7 +1981,7 @@ country_event = {
 
 	immediate = {
 		random_owned_planet = {
-			limit = { has_planet_flag = giga_frameworld@root }
+			limit = { has_carrier_flag = giga_frameworld@root }
 
 			if = {
 				limit = {

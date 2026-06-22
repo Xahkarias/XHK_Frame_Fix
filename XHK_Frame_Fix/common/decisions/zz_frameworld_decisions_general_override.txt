@@ -1,21 +1,4 @@
 
-# XHK NOTE:
-# overwritten to delete them
-
-giga_frameworld_expanded_maintenance_protocol = {
-    potential = {
-        always = no
-    }
-    effect = {  }
-}
-
-giga_frameworld_expanded_maintenance_protocol_remove = {
-    potential = {
-        always = no
-    }
-    effect = {  }
-}
-
 # Baol Organism Lifeseed, Frameworld edition
 giga_frameworld_baol_life_seed = {
     owned_planets_only = yes
@@ -46,7 +29,7 @@ giga_frameworld_baol_life_seed = {
 
         if = {
             limit = {
-                has_planet_flag = frameworld_gaia
+                has_carrier_flag = frameworld_gaia
             }
 
             # if we already have the deposit, spawn 6 pops
@@ -73,7 +56,7 @@ giga_frameworld_baol_life_seed = {
             custom_tooltip = giga_frameworld_baol_life_seed_effects
 
             hidden_effect = {
-                set_planet_flag = frameworld_gaia
+                #set_planet_flag = frameworld_gaia
                 create_pop_group = {
                     species = event_target:nu_baol_species
                     ethos = {
