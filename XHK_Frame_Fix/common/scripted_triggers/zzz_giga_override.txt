@@ -8,7 +8,7 @@ giga_can_resettle_planet = {
             }
             nor = {
                 giga_is_excluded_from_frameworld_resettlement = yes
-                has_planet_flag = giga_frameworld@owner
+                has_carrier_flag = giga_frameworld@owner
             }
         }
         always = no
