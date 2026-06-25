@@ -90,7 +90,7 @@ giga_cloning = {
     }
 
     weight = {
-        weight = value:giga_specialist_no_resource_weight|JOB|giga_cloning|INDENTURED|0.5|
+        weight = 400
     }
 }
 
@@ -151,18 +151,60 @@ giga_extra_healthcare = {
     }
 
     weight = {
-        modifier = {
-            exists = owner
-            owner = { has_valid_civic = civic_private_healthcare_corporate }
-            weight = value:giga_specialist_weight|JOB|giga_extra_healthcare|RESOURCE|trade|INDENTURED|0.5|AMENITIES|yes|
-        }
-        modifier = {
-            exists = owner
-            owner = { not = { has_valid_civic = civic_private_healthcare_corporate } }
-            weight = value:giga_specialist_no_resource_weight|JOB|giga_extra_healthcare|INDENTURED|0.5|AMENITIES|yes|
-        }
-        multiply = 2
+        weight = 300
     }
 
     inline_script = jobs/automodding_priority_charisma
+}
+
+
+# special warrior drone which spawns much stronger armies
+frameworld_defender_drone = {
+    category = simple_drone
+
+    swappable_data = {
+        default = {
+            condition_string = DRONE_JOB_TRIGGER
+            building_icon = building_stronghold
+            icon = warrior_drone
+        }
+    }
+    tags = { soldier }
+
+    country_modifier = {
+        country_naval_cap_add = 6
+    }
+
+    resources = {
+        category = planet_soldiers
+        produces = {
+            unity = 3
+        }
+        inline_script = "output/soldier_output"
+    }
+
+    planet_modifier = {
+        planet_defense_armies_add = 2
+    }
+
+    inline_script = "output/soldier_triggered_modifiers"
+
+    possible_pre_triggers = {
+        has_owner = yes
+        is_enslaved = no
+        is_being_purged = no
+        is_being_assimilated = no
+        is_sapient = yes
+    }
+
+    possible_precalc = can_fill_drone_job
+
+    weight = {
+        weight = 0.8
+        # higher than clerk but lower than rurals
+    }
+
+    inline_script = jobs/automodding_priority_unity
+
+    inline_script = jobs/promotion/giga_job_promotion_simple_drone
 }
