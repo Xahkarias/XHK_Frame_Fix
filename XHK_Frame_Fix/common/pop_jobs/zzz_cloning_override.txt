@@ -114,8 +114,22 @@ giga_extra_healthcare = {
 
     planet_modifier = {
         logistic_growth_mult = 0.05
-        bonus_pop_growth_mult = 0.05
     }
+
+	triggered_planet_pop_group_modifier_for_all = {
+		potential = {
+			# added stop if population controls
+			NOT = { has_modifier = planet_population_control }
+		}
+		bonus_pop_growth = 1
+	}
+	triggered_planet_modifier = {
+		potential = {
+			# added stop if population controls
+			NOT = { has_modifier = planet_population_control }
+		}
+		fake_pop_growth_mod = 1
+	}
 
     resources = {
         category = planet_doctors
@@ -156,7 +170,64 @@ giga_extra_healthcare = {
 
     inline_script = jobs/automodding_priority_charisma
 }
+giga_extra_healthcare_drone = {
+	category = complex_drone
+	swappable_data = {
+		default = {
+			condition_string = DRONE_JOB_TRIGGER
+			building_icon = building_medical_3
+		}
+	}
 
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	possible_precalc = can_fill_drone_job
+
+	planet_modifier = {
+		logistic_growth_mult = 0.05
+	}
+
+	triggered_planet_pop_group_modifier_for_all = {
+		potential = {
+			# added stop if population controls
+			NOT = { has_modifier = planet_population_control }
+		}
+		bonus_pop_growth = 1
+	}
+	triggered_planet_modifier = {
+		potential = {
+			# added stop if population controls
+			NOT = { has_modifier = planet_population_control }
+		}
+		fake_pop_growth_mod = 1
+	}
+
+	resources = {
+		category = planet_doctors
+		upkeep = {
+			consumer_goods = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+		}
+		planet_amenities_add = 200
+		mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
+	}
+
+	weight = {
+		weight = 300
+	}
+
+	inline_script = jobs/automodding_priority_charisma
+}
 
 # special warrior drone which spawns much stronger armies
 frameworld_defender_drone = {

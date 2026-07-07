@@ -448,6 +448,20 @@ d_frameworld_core = {
         multiplier = modifier:giga_frameworld_growth_jobs_add
     }
 
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_machine_empire = yes
+				giga_has_frameworld_origin = yes
+				has_valid_civic = civic_machine_assimilator
+			}
+		}
+		job_replicator_add = -30
+		job_giga_extra_healthcare_drone_add = 30
+		multiplier = modifier:giga_frameworld_growth_jobs_add
+	}
+
     ####################################################################################################################
     ####################################################################################################################
     ####################################################################################################################

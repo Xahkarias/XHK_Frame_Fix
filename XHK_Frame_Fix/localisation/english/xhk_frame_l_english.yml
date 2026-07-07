@@ -60,6 +60,14 @@
  giga_frameworld_basic_refinery_zone_desc:0 "This zone can produce strategic resources in the comfort of a sweltering refinery."
 
  ######################
+ ### JOBS #######
+ ######################
+ job_giga_extra_healthcare_drone:0 "Secondary Healthcare Drone"
+ job_giga_extra_healthcare_drone_plural:0 "Secondary Healthcare Drones"
+ job_giga_extra_healthcare_drone_desc:0 "Ensuring the health and well-being of our organic components is the key to long term prosperity."
+ mod_job_giga_extra_healthcare_drone_add:0 "[giga_extra_healthcare_drone.GetName] Jobs"
+
+ ######################
  ### OTHER STUFF
  ######################
  frameworld_computing_complex_extra_tt:0 "§GDoubles§! the number of jobs in §GUnity§!, §GTrade§! and §GResearch§! Districts."
