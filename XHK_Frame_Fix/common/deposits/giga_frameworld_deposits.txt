@@ -454,7 +454,10 @@ d_frameworld_core = {
 			owner = {
 				is_machine_empire = yes
 				giga_has_frameworld_origin = yes
-				has_valid_civic = civic_machine_assimilator
+				OR = {
+					has_valid_civic = civic_machine_assimilator
+					has_valid_civic = civic_machine_servitor
+				}
 			}
 		}
 		job_replicator_add = -30
