@@ -541,7 +541,9 @@ giga_frameworld_expand_mass = {
         change_planet_size = 1
 
         hidden_effect = {
-            giga_frameworld_update_entity_with_fallback = yes
+			planet = {
+				giga_frameworld_update_entity_with_fallback = yes
+			}
             giga_frameworld_recalculate_variables = yes
             frameworld_conduct_audit_check_ai = yes
         }
