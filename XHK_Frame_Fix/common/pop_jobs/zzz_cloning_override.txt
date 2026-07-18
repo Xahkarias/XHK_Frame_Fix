@@ -210,7 +210,7 @@ giga_extra_healthcare_drone = {
 	resources = {
 		category = planet_doctors
 		upkeep = {
-			consumer_goods = 1
+			minerals = 3
 		}
 	}
 
