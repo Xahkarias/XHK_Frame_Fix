@@ -1,0 +1,13 @@
+defined_text = {
+	name = FrameworldEvent101GetOutpost
+
+	text = {
+		trigger = {
+			planet = { has_planet_flag = giga_frameworld_outpost }
+		}
+
+		localization_key = giga_frameworld_origin.101.outpost
+	}
+
+	default = giga_frameworld_origin.101.no_outpost
+}

@@ -865,20 +865,19 @@ country_event = {
 					pop_amount = 0
 				}
 				
-				#remove_all_buildings = yes
-				#remove_all_districts = yes
-				#destroy_colony = yes
-				
+				remove_all_buildings = yes
+				remove_all_districts = yes
+				destroy_colony = yes
+
+				log = "FRAME FIX: habitable resettlement complete"
+
 				if = {
 					limit = {
-						can_have_frameworld_outpost = yes
+						can_have_frameworld_outpost_resettle_ver = yes
                         not = { is_planet_class = pc_birch}
 					}
-					set_carrier_flag = frameworld_built_outpost
-					#giga_frameworld_create_outpost = { WHO = root RESETTLED = yes}
-					#root = {
-					#	giga_frameworld_recalculate_outpost_bonus = yes
-					#}
+					log = "FRAME FIX: can_have_frameworld_outpost_resettle_ver = true "
+
 					giga_frameworld_create_outpost = {
 						planet = this
 						owner = root
@@ -891,8 +890,6 @@ country_event = {
 						scopes = { from = prev }
 					}
 				}
-
-                destroy_colony = yes
 			}
 		}
 		set_update_modifiers_batch = end
