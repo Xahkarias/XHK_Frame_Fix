@@ -1,7 +1,7 @@
 # Grand Archive
 
-@entity_x				= -8
-@entity_y				= -8
+@entity_x				= -16
+@entity_y				= 4
 
 grand_archive_0 = {
 	entity = "grand_archive_entity"
@@ -52,17 +52,6 @@ grand_archive_0 = {
 				is_inside_border = from
 			}
 			custom_tooltip = {
-				fail_text = "requires_surveyed_system"
-				NOT = {
-					any_system_planet = {
-						is_surveyed = {
-							who = prev.from
-							status = no
-						}
-					}
-				}
-			}
-			custom_tooltip = {
 				fail_text = must_have_2500_pops
 				OR = {
 					from = {
@@ -107,10 +96,14 @@ grand_archive_0 = {
 	placement_rules = {
 		planet_possible = {
 			custom_tooltip = {
-				fail_text = "requires_surveyed_planet"
+				fail_text = "requires_survey_not_habitable"
 				is_surveyed = {			# prevent leaking habitability information
 					who = prev.from
 					status = yes
+				}
+				OR = {
+					colonizable_planet = no
+					is_planet_class = pc_giga_frameworld
 				}
 			}
 			custom_tooltip = {
@@ -138,13 +131,13 @@ grand_archive_0 = {
 				fail_text = "requires_not_ring_world"
 				OR = {
 					is_planet_class = pc_giga_frameworld
-					is_ringworld = no
+				is_ringworld = no
 				}
 			}
 			custom_tooltip = {
 				fail_text = "requires_no_existing_megastructure"
 				NOT = {
-					has_carrier_flag = megastructure
+					has_planet_flag = megastructure
 				}
 			}
 		} # use these for all non-star megastructures
@@ -194,7 +187,7 @@ grand_archive_0 = {
 			}
 		}
 		fromfrom.planet = {
-			set_carrier_flag = has_megastructure
+			set_planet_flag = has_megastructure
 		}
 	}
 }
