@@ -3654,7 +3654,7 @@ district_giga_frameworld_maginot_shield_generators = {
 	planet_modifier = {
 		planet_orbital_bombardment_damage = -0.05 # yes these are spammable to 100% and beyond, intentional
 		# stuff on the planet is protected by shields from damage
-		army_collateral_damage_mult = -1.00
+		army_collateral_damage_mult = -0.1
 	}
 
 	triggered_desc = {
