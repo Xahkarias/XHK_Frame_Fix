@@ -1,0 +1,3 @@
+﻿l_english:
+ # penrose deposit effect, for decision
+ frameworld_penrose_fake_tooltip:0 "On megastructure completion, adds §Y$d_frameworld_penrose$§! to §Y[this.GetName]§!, with the following result:\n    $mod_planet_technician_energy_produces_add_planet$: §G+2§!\n    $mod_planet_technician_minerals_upkeep_add_planet$: §R+0.5§!"

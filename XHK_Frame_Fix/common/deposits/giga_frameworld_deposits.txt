@@ -929,8 +929,8 @@ d_frameworld_penrose = {
     potential = { always = no }
 
     planet_modifier = {
-        planet_technician_energy_produces_add = 1
-        planet_technician_minerals_upkeep_add = 1
+        planet_technician_energy_produces_add = 2
+        planet_technician_minerals_upkeep_add = 0.5
     }
 
     triggered_planet_modifier = {
