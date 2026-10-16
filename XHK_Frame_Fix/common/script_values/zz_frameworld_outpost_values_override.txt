@@ -1,0 +1,185 @@
+
+# gets the total output modifier of a resource for a job
+# includes robot output, all jobs output, that resource output, 
+# that job output, and that job that resource output
+giga_frameworld_outpost_generic_modifier = {
+	base = 1
+
+	#removed the machine output (planet_jobs_robotic_produces_mult) check
+
+	# all jobs output
+	complex_trigger_modifier = {
+		trigger = check_modifier_value
+		trigger_scope = orbit #planet
+		parameters = {
+			modifier = planet_jobs_produces_mult
+		}
+		mode = add
+	}
+
+	# all jobs specific resource output
+	complex_trigger_modifier = {
+		trigger = check_modifier_value
+		trigger_scope = orbit #planet
+		parameters = {
+			modifier = planet_jobs_$RESOURCE$_produces_mult
+		}
+		mode = add
+	}
+
+	# category output
+	complex_trigger_modifier = {
+		trigger = check_modifier_value
+		trigger_scope = orbit #planet
+		parameters = {
+			modifier = planet_jobs_$CATEGORY$_produces_mult
+		}
+		mode = add
+	}
+
+	# category specific resource output
+	complex_trigger_modifier = {
+		trigger = check_modifier_value
+		trigger_scope = orbit #planet
+		parameters = {
+			modifier = planet_jobs_$CATEGORY$_$RESOURCE$_produces_mult
+		}
+		mode = add
+	}
+
+	# specific job output
+	complex_trigger_modifier = {
+		trigger = check_modifier_value
+		trigger_scope = orbit #planet
+		parameters = {
+			modifier = planet_$JOB$_produces_mult
+		}
+		mode = add
+	}
+
+	# specific job specific resource output...
+	complex_trigger_modifier = {
+		trigger = check_modifier_value
+		trigger_scope = orbit #planet
+		parameters = {
+			modifier = planet_$JOB$_$RESOURCE$_produces_mult
+		}
+		mode = add
+	}
+}
+
+########################################################################
+# ENERGY
+
+giga_frameworld_outpost_energy_jobs = {
+	base = 0
+
+	# normal planet districts
+	complex_trigger_modifier = {
+		trigger = check_modifier_value
+		trigger_scope = orbit #planet
+		parameters = {
+			modifier = district_generator_max_add
+		}
+		mode = add
+	}
+
+	# betharian power plant
+	modifier = {
+		exists = owner
+		owner = { has_technology = tech_mine_betharian }
+		add = value:giga_frameworld_outpost_energy_jobs_betharian
+	}
+}
+
+giga_frameworld_outpost_energy_jobs_betharian = {
+	base = 0
+
+	modifier = {
+		orbit = { has_deposit = d_betharian_deposit }
+		add = 8
+	}
+}
+
+########################################################################
+# MINERALS
+
+giga_frameworld_outpost_minerals_jobs = {
+	base = 0
+
+	# normal planet districts
+	complex_trigger_modifier = {
+		trigger = check_modifier_value
+		trigger_scope = orbit #planet
+		parameters = {
+			modifier = district_mining_max_add
+		}
+		mode = add
+	}
+}
+
+########################################################################
+# FOOD
+
+giga_frameworld_outpost_food_districts = {
+	complex_trigger_modifier = {
+		trigger = check_modifier_value
+		trigger_scope = orbit #planet
+		parameters = {
+			modifier = district_farming_max_add
+		}
+		mode = add
+	}
+}
+
+##############################################################################################################
+# STRATEGICS
+
+# no buildings, so use deposits
+giga_frameworld_outpost_exotic_gases_mines = {
+	base = 0
+
+	# small
+	modifier = { orbit = { has_deposit = d_bubbling_swamp } add = 1 }
+	modifier = { orbit = { has_deposit = d_toxic_atmosphere } add = 1 }
+	modifier = { orbit = { has_deposit = d_volcanic_fumarole } add = 1 }
+	modifier = { orbit = { has_deposit = d_bogplants } add = 1 }
+	modifier = { orbit = { has_deposit = d_fluffy_plains } add = 1 } # giga
+	modifier = { orbit = { has_deposit = d_gassy_rivers } add = 1 } # giga
+
+	# large
+	modifier = { orbit = { has_deposit = d_fuming_bog } add = 2 }
+	modifier = { orbit = { has_deposit = d_toxic_god_envenomed_seas_upgraded } add = 2 }
+}
+
+giga_frameworld_outpost_volatile_motes_mines = {
+	base = 0
+
+	# small
+	modifier = { orbit = { has_deposit = d_dust_caverns } add = 1 }
+	modifier = { orbit = { has_deposit = d_particle_storm_3_motes } add = 1 }
+	modifier = { orbit = { has_deposit = d_ash_storms } add = 1 }
+	modifier = { orbit = { has_deposit = d_volcanic_stifling_atmosphere } add = 1 }
+	modifier = { orbit = { has_deposit = d_explosive_atmosphere } add = 1 }
+	modifier = { orbit = { has_deposit = d_mote_cloud } add = 1 } # giga
+
+	# large
+	modifier = { orbit = { has_deposit = d_dust_desert } add = 2 }
+}
+
+giga_frameworld_outpost_rare_crystals_mines = {
+	base = 0
+
+	# small
+	modifier = { orbit = { has_deposit = d_crystalline_caverns } add = 1 }
+	modifier = { orbit = { has_deposit = d_crystal_kraken_body_bombed } add = 1 }
+	modifier = { orbit = { has_deposit = d_celestial_storm_1_mines } add = 1 }
+	modifier = { orbit = { has_deposit = d_celestial_storm_3_crystal } add = 1 }
+	modifier = { orbit = { has_deposit = d_crystaline_growths } add = 1 }
+
+	# large
+	modifier = { orbit = { has_deposit = d_crystal_forest } add = 2 }
+	modifier = { orbit = { has_deposit = d_crystal_reef } add = 2 }
+	modifier = { orbit = { has_deposit = d_crystal_kraken_body } add = 2 }
+	modifier = { orbit = { has_deposit = d_crystalline_glacier } add = 2 }
+}

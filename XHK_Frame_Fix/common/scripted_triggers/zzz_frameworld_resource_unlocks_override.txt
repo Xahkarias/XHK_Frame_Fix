@@ -1,0 +1,138 @@
+
+xhk_frameworld_planet_has_gases_deposit = {
+	or = {
+		has_deposit = d_bubbling_swamp
+		has_deposit = d_toxic_atmosphere
+		has_deposit = d_volcanic_fumarole
+		has_deposit = d_bogplants
+		has_deposit = d_fluffy_plains
+		has_deposit = d_gassy_rivers
+		has_deposit = d_fuming_bog
+		has_deposit = d_toxic_god_envenomed_seas_upgraded
+	}
+}
+
+xhk_frameworld_planet_has_motes_deposit = {
+	or = {
+		has_deposit = d_dust_caverns
+		has_deposit = d_particle_storm_3_motes
+		has_deposit = d_ash_storms
+		has_deposit = d_volcanic_stifling_atmosphere
+		has_deposit = d_explosive_atmosphere
+		has_deposit = d_mote_cloud
+		has_deposit = d_dust_desert
+	}
+}
+
+xhk_frameworld_planet_has_crystals_deposit = {
+	or = {
+		has_deposit = d_crystalline_caverns
+		has_deposit = d_crystal_kraken_body_bombed
+		has_deposit = d_celestial_storm_1_mines
+		has_deposit = d_celestial_storm_3_crystal
+		has_deposit = d_crystaline_growths
+		has_deposit = d_crystal_forest
+		has_deposit = d_crystal_reef
+		has_deposit = d_crystal_kraken_body
+		has_deposit = d_crystalline_glacier
+	}
+}
+
+giga_frameworld_needs_to_unlock_motes = {
+	not = { has_country_flag = giga_frameworld_unlocked_motes }
+	nor = { 
+		has_technology = tech_mine_volatile_motes
+		has_tech_option = tech_mine_volatile_motes 
+	}
+
+	# prereq techs
+	has_technology = tech_space_construction # starting
+	has_technology = tech_space_science_1 # tier 1 physics
+	has_technology = tech_administrative_ai # tier 1 physics
+	has_technology = tech_fusion_power # tier 1 physics
+
+	# any outpost world has the resource deposits
+	any_planet_within_border = {
+		#exists = owner
+		#owner = {
+		#	is_same_empire = event_target:frameworld_outpost_country
+		#}
+		is_frameworld_outpost_planet = yes
+
+		xhk_frameworld_planet_has_motes_deposit = yes
+	}
+}
+
+giga_frameworld_needs_to_unlock_gases = {
+	not = { has_country_flag = giga_frameworld_unlocked_gases }
+	nor = { 
+		has_technology = tech_mine_exotic_gases
+		has_tech_option = tech_mine_exotic_gases
+	}
+
+	# prereq techs
+	has_technology = tech_space_construction # starting
+	has_technology = tech_powered_exoskeletons # tier 1 engineering
+	has_technology = tech_space_mining_1 # tier 1 engineering
+	has_technology = tech_mining_1 # tier 1 engineering
+
+	# any outpost world has the resource deposits
+	any_planet_within_border = {
+		#exists = owner
+		#owner = {
+		#	is_same_empire = event_target:frameworld_outpost_country
+		#}
+		is_frameworld_outpost_planet = yes
+
+		xhk_frameworld_planet_has_gases_deposit = yes
+	}
+}
+
+giga_frameworld_needs_to_unlock_crystals = {
+	not = { has_country_flag = giga_frameworld_unlocked_crystals }
+	nor = { 
+		has_technology = tech_mine_rare_crystals
+		has_tech_option = tech_mine_rare_crystals
+	}
+
+	# prereq techs
+	has_technology = tech_space_construction # starting
+	has_technology = tech_powered_exoskeletons # tier 1 engineering
+	has_technology = tech_space_mining_1 # tier 1 engineering
+	has_technology = tech_mining_1 # tier 1 engineering
+
+	# any outpost world has the resource deposits
+	any_planet_within_border = {
+		#exists = owner
+		#owner = {
+		#	is_same_empire = event_target:frameworld_outpost_country
+		#}
+		is_frameworld_outpost_planet = yes
+
+		xhk_frameworld_planet_has_crystals_deposit = yes
+	}
+}
+
+giga_frameworld_needs_to_unlock_betharian = {
+	not = { has_country_flag = giga_frameworld_unlocked_betharian }
+	nor = { 
+		has_technology = tech_mine_betharian
+		has_tech_option = tech_mine_betharian
+	}
+
+	# prereq techs
+	has_technology = tech_space_construction # starting
+	has_technology = tech_power_hub_1 # energy grid
+	has_technology = tech_power_plant_2 # first technician upgrade
+
+	# any outpost world has the resource deposits
+	any_planet_within_border = {
+		#exists = owner
+		#owner = {
+		#	is_same_empire = event_target:frameworld_outpost_country
+		#}
+		is_frameworld_outpost_planet = yes
+
+		has_deposit = d_betharian_deposit
+	}
+}
