@@ -1,4 +1,17 @@
 
+# planetary outposts no longer produce any research or unity
+# this also covers the half of the planet's flat research/unity output that outposts used to add
+
+# all three researches
+giga_frameworld_outpost_science_output = {
+	base = 0
+}
+
+# unity
+giga_frameworld_outpost_unity_output = {
+	base = 0
+}
+
 # gets the total output modifier of a resource for a job
 # includes robot output, all jobs output, that resource output, 
 # that job output, and that job that resource output
