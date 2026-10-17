@@ -228,6 +228,10 @@ zone_giga_frameworld_amenities = {
         building_fe_clinic_2
         building_fe_entertainment_1
         building_fe_entertainment_2
+		aesthetic_wonders_holomuseum
+		galactic_history_holomuseum
+		xeno_geology_holomuseum
+		building_artist_patron
 
         #PD
         building_pd_eludium_floating_resort
@@ -294,6 +298,15 @@ zone_giga_frameworld_amenities_dystopian = {
         building_fe_clinic_2
         building_fe_entertainment_1
         building_fe_entertainment_2
+
+		aesthetic_wonders_holomuseum
+		galactic_history_holomuseum
+		xeno_geology_holomuseum
+		building_artist_patron
+
+		#PD
+		building_pd_eludium_floating_resort
+		building_pd_acean_medical_center
     }
     
     excluded_building_sets = { mining generator }
