@@ -1,0 +1,7 @@
+spriteTypes = {
+	# lol this one was missing
+	spriteType = {
+		name = "GFX_giga_frameworld_icon_big"
+		texturefile = "gfx/interface/icons/planet_classes/giga_frameworld_icon_big.dds"
+	}
+}
