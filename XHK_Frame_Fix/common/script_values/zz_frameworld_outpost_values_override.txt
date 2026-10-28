@@ -1,4 +1,10 @@
 
+# raw materials such as energy, minerals, food
+# increased from 0.15 scale
+giga_frameworld_outpost_raw_output = {
+	weight = value:giga_frameworld_outpost_output|JOB|$JOB$|CATEGORY|$CATEGORY$|RESOURCE|$RESOURCE$|BASE|4|SCALE|0.25|
+}
+
 # planetary outposts no longer produce any research or unity
 # this also covers the half of the planet's flat research/unity output that outposts used to add
 
