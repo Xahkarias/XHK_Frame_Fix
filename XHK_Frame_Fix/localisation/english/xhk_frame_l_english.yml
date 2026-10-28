@@ -50,6 +50,9 @@
  district_giga_frameworld_mindlink_desc: "$district_mindlink_desc$"
  district_giga_frameworld_mindlink_subtitle: "Transference Confluence"
 
+ mod_district_giga_frameworld_maginot_planetary_cannons_max_add:0 "Max $district_giga_frameworld_maginot_planetary_cannons_plural$"
+ mod_district_giga_frameworld_maginot_shield_generators_max_add:0 "Max $district_giga_frameworld_maginot_shield_generators_plural$"
+
  ######################
  ### DISTRICT SUBTITLES #######
  ######################

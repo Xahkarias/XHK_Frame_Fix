@@ -3,3 +3,8 @@
  frameworld_penrose_fake_tooltip:0 "On megastructure completion, adds §Y$d_frameworld_penrose$§! to §Y[this.GetName]§!, with the following result:\n    $mod_planet_technician_energy_produces_add_planet$: §G+2§!\n    $mod_planet_technician_minerals_upkeep_add_planet$: §R+0.5§!"
 
  giga_frameworld_docs_conquest_desc:0 "Conquered worlds will have their population resettled to the §Y$pc_giga_frameworld$§! at a rate of §Y400 pops per month§! or §Y5% of the population, whichever is higher§!. When emptied, a §Y$giga_frameworld_outpost$§! will be automatically created over the former colony.\n\nWorlds conquered from §Y$pc_giga_frameworld$§! empires have their §Y$giga_frameworld_outpost_plural$§! wrecked. Wrecked outposts can be repaired if the system is reacquired."
+
+ #maginot district tooltip
+ district_giga_frameworld_maginot_shield_generators_cap:0 "\n§HCapped at §Y$district_giga_frameworld_maginot_cap$§!.§!"
+ district_giga_frameworld_maginot_planetary_cannons_cap:0 "\n§HCapped at §Y$district_giga_frameworld_maginot_cap$§!.§!"
+ district_giga_frameworld_maginot_cap:0 "£planetsize£ 15% of Planet Size"
