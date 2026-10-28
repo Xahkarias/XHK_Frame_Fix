@@ -8,3 +8,5 @@
  district_giga_frameworld_maginot_shield_generators_cap:0 "\n§HCapped at §Y$district_giga_frameworld_maginot_cap$§!.§!"
  district_giga_frameworld_maginot_planetary_cannons_cap:0 "\n§HCapped at §Y$district_giga_frameworld_maginot_cap$§!.§!"
  district_giga_frameworld_maginot_cap:0 "£planetsize£ 15% of Planet Size"
+
+ giga_frameworld_nanites_effect:0 "Enables Expansion decisions costing £nanites£ §Y$nanites$§!\n\nRetrofits several Districts with nanotechnology:\n\n§H$district_giga_frameworld_foundry$:§!\n- Produces additional £alloys£ §Y$alloys$§! directly\n- Increased £energy£ §Y$energy$§! Upkeep\n- Additional £nanites£ §Y$nanites$§! Upkeep\n\n§H$district_giga_frameworld_science$:§!\n- Adds 30 [owner.GetResearcherIcon] §Y[owner.GetResearcher]§! Jobs\n- Additional £nanites£ §Y$nanites$§! Upkeep\n\n§H$district_giga_frameworld_refinery$:§!\n- Produces additional $giga_r_motes$$giga_r_gases$$giga_r_crystals$ §YStrategic Resources§! directly\n- Increased £energy£ §Y$energy$§! Upkeep\n- Additional £nanites£ §Y$nanites$§! Upkeep\n "
