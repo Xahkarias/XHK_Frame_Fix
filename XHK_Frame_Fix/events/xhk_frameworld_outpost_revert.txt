@@ -1,0 +1,60 @@
+
+namespace = xhk_frameworld_outpost
+
+# outpost disbanded
+country_event = {
+	id = xhk_frameworld_outpost.1
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		from = {
+			is_frameworld_outpost = yes
+		}
+	}
+
+	immediate = {
+		from = {
+			if = {
+				limit = {
+					orbit? = {
+						is_frameworld_outpost_planet = yes
+					}
+				}
+				orbit = {
+					giga_frameworld_outpost_restore_planet_class = yes
+					giga_frameworld_clear_outpost_flags = yes
+				}
+			}
+		}
+	}
+}
+
+# outpost destroyed
+country_event = {
+	id = xhk_frameworld_outpost.2
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		fromfrom = {
+			is_frameworld_outpost = yes
+		}
+	}
+
+	immediate = {
+		fromfrom = {
+			if = {
+				limit = {
+					orbit? = {
+						is_frameworld_outpost_planet = yes
+					}
+				}
+				orbit = {
+					giga_frameworld_outpost_restore_planet_class = yes
+					giga_frameworld_clear_outpost_flags = yes
+				}
+			}
+		}
+	}
+}
