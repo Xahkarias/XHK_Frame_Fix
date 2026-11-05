@@ -1,0 +1,12 @@
+
+on_fleet_disbanded = {
+	events = {
+		xhk_frameworld_outpost.1 # outpost disbanded
+	}
+}
+
+on_fleet_destroyed_victim = {
+	events = {
+		xhk_frameworld_outpost.2 # outpost destroyed
+	}
+}
