@@ -142,7 +142,7 @@ zone_giga_frameworld_anticrime = {
     excluded_building_sets = {
         mining generator farming
     }
-    include = {
+    included_buildings = {
         building_fe_security_1
         building_fe_security_2
     }
@@ -207,7 +207,7 @@ zone_giga_frameworld_amenities = {
     included_building_sets = {
         amenities # this isnt a real tag
     }
-    include = {
+    included_buildings = {
         building_luxury_residence
         building_paradise_dome
         building_communal_housing
@@ -277,7 +277,7 @@ zone_giga_frameworld_amenities_dystopian = {
     included_building_sets = {
         amenities # this isnt a real tag
     }
-    include = {
+    included_buildings = {
         building_luxury_residence
         building_paradise_dome
         building_communal_housing
@@ -345,7 +345,7 @@ zone_giga_frameworld_supertensiles = {
     included_building_sets = {
         giga_supertensile
     }
-    include = {
+    included_buildings = {
         building_giga_asteroid_factory_supertensiles_one_planet
     }
 
@@ -409,7 +409,7 @@ zone_giga_frameworld_ehof_sentient = {
         }
     }
     max_buildings = 1
-    include = {
+    included_buildings = {
         building_ehof_sm_forge_1
         building_ehof_sm_forge_2
     }   
@@ -432,7 +432,7 @@ zone_giga_frameworld_ehof_negative = {
         }
     }
     max_buildings = 1
-    include = {
+    included_buildings = {
         building_giga_institute_1
         building_giga_institute_2
         building_giga_supercomputer_1
@@ -453,4 +453,4 @@ zone_giga_frameworld_ehof_negative = {
     }
     ai_priority = 10
     icon = GFX_giga_district_specialization_negative_mass
-}
+}

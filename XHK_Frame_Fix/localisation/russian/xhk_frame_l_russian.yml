@@ -50,6 +50,9 @@
   district_giga_frameworld_mindlink_desc:99 "$district_mindlink_desc$"
   district_giga_frameworld_mindlink_subtitle:99 "Transference Confluence"
   
+  mod_district_giga_frameworld_maginot_planetary_cannons_max_add:99 "Max $district_giga_frameworld_maginot_planetary_cannons_plural$"
+  mod_district_giga_frameworld_maginot_shield_generators_max_add:99 "Max $district_giga_frameworld_maginot_shield_generators_plural$"
+  
   ######################
   ### DISTRICT SUBTITLES #######
   ######################
@@ -66,6 +69,22 @@
   job_giga_extra_healthcare_drone_plural:99 "Secondary Healthcare Drones"
   job_giga_extra_healthcare_drone_desc:99 "Ensuring the health and well-being of our organic components is the key to long term prosperity."
   mod_job_giga_extra_healthcare_drone_add:99 "[giga_extra_healthcare_drone.GetName] Jobs"
+  
+  ######################
+  ### COMBAT COMPUTERS #######
+  ######################
+  GIGA_FRAMEWORLD_COMBAT_COMPUTER_PLATFORM_DEFAULT:99 "$COMBAT_COMPUTER_PLATFORM_DEFAULT$"
+  GIGA_FRAMEWORLD_COMBAT_COMPUTER_PLATFORM_DEFAULT_DESC:99 "$COMBAT_COMPUTER_PLATFORM_DEFAULT_DESC$"
+  GIGA_FRAMEWORLD_COMBAT_COMPUTER_PLATFORM_BASIC:99 "$COMBAT_COMPUTER_PLATFORM_BASIC$"
+  GIGA_FRAMEWORLD_COMBAT_COMPUTER_PLATFORM_BASIC_DESC:99 "$COMBAT_COMPUTER_PLATFORM_BASIC_DESC$"
+  GIGA_FRAMEWORLD_COMBAT_COMPUTER_PLATFORM_ADVANCED:99 "$COMBAT_COMPUTER_PLATFORM_ADVANCED$"
+  GIGA_FRAMEWORLD_COMBAT_COMPUTER_PLATFORM_ADVANCED_DESC:99 "$COMBAT_COMPUTER_PLATFORM_ADVANCED_DESC$"
+  GIGA_FRAMEWORLD_COMBAT_COMPUTER_PLATFORM_SAPIENT:99 "$COMBAT_COMPUTER_PLATFORM_SAPIENT$"
+  GIGA_FRAMEWORLD_COMBAT_COMPUTER_PLATFORM_SAPIENT_DESC:99 "$COMBAT_COMPUTER_PLATFORM_SAPIENT_DESC$"
+  GIGA_FRAMEWORLD_COMBAT_COMPUTER_PLATFORM_AUTONOMOUS:99 "$COMBAT_COMPUTER_PLATFORM_AUTONOMOUS$"
+  GIGA_FRAMEWORLD_COMBAT_COMPUTER_PLATFORM_AUTONOMOUS_DESC:99 "$COMBAT_COMPUTER_PLATFORM_AUTONOMOUS_DESC$"
+  GIGA_FRAMEWORLD_COMBAT_COMPUTER_PLATFORM_PRECOG:99 "$COMBAT_COMPUTER_PLATFORM_PRECOG$"
+  GIGA_FRAMEWORLD_COMBAT_COMPUTER_PLATFORM_PRECOG_DESC:99 "$COMBAT_COMPUTER_PLATFORM_PRECOG_DESC$"
   
   ######################
   ### OTHER STUFF

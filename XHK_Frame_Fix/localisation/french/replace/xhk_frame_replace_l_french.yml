@@ -4,3 +4,10 @@
   
   giga_frameworld_docs_conquest_desc:99 "Conquered worlds will have their population resettled to the §Y$pc_giga_frameworld$§! at a rate of §Y400 pops per month§! or §Y5% of the population, whichever is higher§!. When emptied, a §Y$giga_frameworld_outpost$§! will be automatically created over the former colony.\n\nWorlds conquered from §Y$pc_giga_frameworld$§! empires have their §Y$giga_frameworld_outpost_plural$§! wrecked. Wrecked outposts can be repaired if the system is reacquired."
   
+  #maginot district tooltip
+  district_giga_frameworld_maginot_shield_generators_cap:99 "\n§HCapped at §Y$district_giga_frameworld_maginot_cap$§!.§!"
+  district_giga_frameworld_maginot_planetary_cannons_cap:99 "\n§HCapped at §Y$district_giga_frameworld_maginot_cap$§!.§!"
+  district_giga_frameworld_maginot_cap:99 "£planetsize£ 15% of Planet Size"
+  
+  giga_frameworld_nanites_effect:99 "Enables Expansion decisions costing £nanites£ §Y$nanites$§!\n\nRetrofits several Districts with nanotechnology:\n\n§H$district_giga_frameworld_foundry$:§!\n- Produces additional £alloys£ §Y$alloys$§! directly\n- Increased £energy£ §Y$energy$§! Upkeep\n- Additional £nanites£ §Y$nanites$§! Upkeep\n\n§H$district_giga_frameworld_science$:§!\n- Adds 30 [owner.GetResearcherIcon] §Y[owner.GetResearcher]§! Jobs\n- Additional £nanites£ §Y$nanites$§! Upkeep\n\n§H$district_giga_frameworld_refinery$:§!\n- Produces additional $giga_r_motes$$giga_r_gases$$giga_r_crystals$ §YStrategic Resources§! directly\n- Increased £energy£ §Y$energy$§! Upkeep\n- Additional £nanites£ §Y$nanites$§! Upkeep\n "
+  

@@ -10,6 +10,12 @@ maginot_bunker_count = {
 
     complex_trigger_modifier = {
         trigger = num_districts
+        parameters = { type = district_maginot_world_bunkers_wilderness }
+        mode = add
+    }
+
+    complex_trigger_modifier = {
+        trigger = num_districts
         parameters = { type = district_maginot_ringworld_bunkers }
         mode = add
         mult = 5

@@ -251,7 +251,9 @@ frameworld_defender_drone = {
         produces = {
             unity = 3
         }
-        inline_script = "output/soldier_output"
+		upkeep = {
+            alloys = 1.0
+        }
     }
 
     planet_modifier = {
