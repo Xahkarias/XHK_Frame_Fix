@@ -457,16 +457,7 @@ country_event = {
 			validate_planet_buildings_and_districts = yes
 
 			# fix unemployed pops from the initial district shuffle
-			every_owned_pop_group = {
-				limit = {
-					is_unemployed = yes
-				}
-				clear_pop_category = yes
-			}
 			check_planet_employment = yes
-
-			# set the maintenance mod on
-			giga_frameworld_apply_expanded_maintenance_modifier = yes
 
 			# set up extra growth mechanics
 			#giga_extra_growth_setup = yes
